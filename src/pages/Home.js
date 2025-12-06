@@ -78,7 +78,7 @@ export default function Home() {
           Let’s build something strong together. Contact us today to discover
           how we can elevate your business.
         </p>
-        <button className="btn contact-btn">Contact Us Today</button>
+        <button onClick={() => window.location.href = '/contact'} className="btn contact-btn">Contact Us Today</button>
       </section>
 
       {/* FOOTER */}

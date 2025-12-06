@@ -235,7 +235,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;  /* adjust size */
-  opacity: 0.08;         /* faint watermark */
+  opacity: 0.100;         /* faint watermark */
   z-index: 0;
 }
 .mobile-toggle {
@@ -283,7 +283,7 @@ button {
   position: relative;
   background: linear-gradient(135deg, #1e293b, #475569);
   color: white;
-  padding: 110px 10px;
+  padding: 100px 10px;
   text-align: center;
   overflow: hidden;
 }
@@ -295,7 +295,7 @@ button {
   background-image: url("../src/images/image1.png"); /* <-- correct path if inside public/images */
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% auto;       /* ensures full elephant visible */
+  background-size: 40% auto;       /* ensures full elephant visible */
   opacity: 0.10;                  /* faint effect */
   z-index: 0;
   padding-right: 400px;
@@ -435,7 +435,6 @@ button {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-
 
 
 /* ----------------------------------
@@ -688,4 +687,1118 @@ button {
   .nav {
     padding: 10px 18px;
   }
+}
+
+
+
+/* SERVICES PAGE HEADER */
+.services-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.services-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.services-subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* SERVICES GRID */
+.services-section {
+  padding: 70px 20px;
+  background: var(--white);
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.service-card {
+  background: #fafafa;
+  padding: 35px 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+}
+
+
+/* CAREER PAGE HEADER */
+.career-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.career-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.career-subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* SECTIONS */
+.career-section,
+.internship-section,
+.culture-section,
+.benefits-section,
+.apply-section {
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--slate);
+}
+
+/* OPENINGS GRID */
+.openings-grid {
+  display: grid;
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.opening-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.opening-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.apply-btn {
+  margin-top: 15px;
+}
+
+/* INTERNSHIP */
+.internship-text {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.internship-list {
+  max-width: 600px;
+  margin: 25px auto 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* CULTURE SECTION */
+.culture-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.culture-card {
+  background: #f4f5f8;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* BENEFITS */
+.benefits-list {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* APPLY FORM */
+.apply-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.apply-form label {
+  font-weight: 600;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 200px;
+}
+
+
+/* --------------------------
+   NAVBAR DROPDOWN (DESKTOP)
+--------------------------- */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--charcoal);
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+
+.dropdown-btn:hover {
+  color: var(--accent);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #1f2937;   /* dark slate */
+  color: white;
+  min-width: 220px;
+  border-radius: 6px;
+  padding: 8px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: #334155;
+  color: var(--accent);
+}
+
+/* Small arrow pointer */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  background: #1f2937;
+  transform: rotate(45deg);
+}
+
+/* --------------------------
+   MOBILE DROPDOWN
+--------------------------- */
+
+.mobile-dropdown summary {
+  font-size: 1.1rem;
+  padding: 12px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobile-dropdown-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.mobile-dropdown-list a {
+  padding: 8px 0;
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.mobile-dropdown-list a:hover {
+  color: var(--accent);
+}
+
+
+/* ------------------------------
+   INDUSTRIES HEADER
+--------------------------------*/
+.industries-header {
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  text-align: center;
+  color: white;
+}
+
+.industries-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.industries-subtitle {
+  margin-top: 12px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   INDUSTRY CARDS SECTION
+--------------------------------*/
+.industries-section {
+  padding: 70px 20px;
+  background: var(--white);
+}
+
+.industries-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.industry-card {
+  background: #fafafa;
+  padding: 35px 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.industry-icon {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.industry-title {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.industry-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+/* ------------------------------
+   TEAM PAGE HEADER
+--------------------------------*/
+.team-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.team-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.team-subtitle {
+  margin-top: 12px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   TEAM GRID STYLES
+--------------------------------*/
+.team-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.team-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.team-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid var(--accent);
+}
+
+.team-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: var(--accent);
+  margin: 5px 0 10px;
+}
+
+.team-bio {
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   CULTURE SECTION
+--------------------------------*/
+.culture-section {
+  padding: 60px 20px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.culture-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--charcoal);
+}
+/* ------------------------------
+   CASE STUDIES HEADER
+--------------------------------*/
+.case-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.case-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.case-subtitle {
+  margin-top: 12px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   CASE STUDY CARD
+--------------------------------*/
+.case-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.case-card {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  background: #fafafa;
+  padding: 35px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.15);
+}
+
+.case-card-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--slate);
+}
+
+/* CONTENT LAYOUT */
+.case-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.case-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 18px;
+}
+
+.case-text {
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--charcoal);
+  line-height: 1.7;
+}
+
+/* TECH STACK LIST */
+.tech-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.tech-list li {
+  margin-bottom: 6px;
+  background: #e5e7eb;
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* UI IMAGES */
+.case-images {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.case-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #e5e7eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  .case-content {
+    grid-template-columns: 1fr;
+  }
+}
+/* ------------------------------
+   CAREER HEADER
+--------------------------------*/
+.career-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.career-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.career-subtitle {
+  font-size: 20px;
+  margin-top: 12px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   CURRENT OPENINGS
+--------------------------------*/
+.career-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.openings-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.opening-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.opening-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.apply-btn {
+  margin-top: 15px;
+}
+
+/* ------------------------------
+   INTERNSHIP
+--------------------------------*/
+.internship-section {
+  padding: 60px 20px;
+  background: #f4f5f7;
+  text-align: center;
+}
+
+.internship-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.internship-list {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   WORK CULTURE
+--------------------------------*/
+.culture-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.culture-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.culture-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+/* ------------------------------
+   BENEFITS
+--------------------------------*/
+.benefits-section {
+  padding: 60px 20px;
+  background: #f4f5f7;
+  text-align: center;
+}
+
+.benefits-list {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   APPLY NOW FORM
+--------------------------------*/
+.apply-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.apply-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 200px;
+}
+/* ------------------------------
+   CAREER HEADER
+--------------------------------*/
+.career-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.career-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.career-subtitle {
+  font-size: 20px;
+  margin-top: 12px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   CURRENT OPENINGS
+--------------------------------*/
+.career-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.openings-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.opening-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.opening-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.apply-btn {
+  margin-top: 15px;
+}
+
+/* ------------------------------
+   INTERNSHIP
+--------------------------------*/
+.internship-section {
+  padding: 60px 20px;
+  background: #f4f5f7;
+  text-align: center;
+}
+
+.internship-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.internship-list {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   WORK CULTURE
+--------------------------------*/
+.culture-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.culture-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.culture-card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+/* ------------------------------
+   BENEFITS
+--------------------------------*/
+.benefits-section {
+  padding: 60px 20px;
+  background: #f4f5f7;
+  text-align: center;
+}
+
+.benefits-list {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   APPLY NOW FORM
+--------------------------------*/
+.apply-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.apply-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 200px;
+}
+/* ------------------------------
+   CONTACT HEADER
+--------------------------------*/
+.contact-header {
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  text-align: center;
+  color: white;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.contact-subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   CONTACT SECTION
+--------------------------------*/
+/* .contact-section {
+  padding: 70px 20px;
+  background: white;
+} */
+
+.contact-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.contact-info h2 {
+  margin-bottom: 12px;
+  color: var(--slate);
+}
+
+/* CONTACT FORM */
+.contact-form {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.contact-btn {
+  width: 180px;
+  margin-top: 15px;
+}
+
+/* ------------------------------
+   MAP SECTION
+--------------------------------*/
+.map-section {
+  padding: 60px 20px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 850px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
+.nav-contact-btn {
+  background: var(--accent);
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.nav-contact-btn:hover {
+  background: var(--orange-dark);
+}
+
+
+/* ------------------------------
+   ABOUT HEADER
+-------------------------------*/
+.about-header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #475569);
+  color: white;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.about-subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   ABOUT INTRO
+-------------------------------*/
+.about-section {
+  padding: 70px 20px;
+  background: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--slate);
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.about-image-box {
+  background: #1e293b;
+  color: white;
+  height: 280px;
+  font-size: 80px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------
+   VISION
+-------------------------------*/
+.vision-section {
+  padding: 60px 20px;
+  background: #f5f6f8;
+  text-align: center;
+}
+
+.vision-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.vision-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   MISSION
+-------------------------------*/
+.mission-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.mission-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.mission-list {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  list-style: none;
+}
+
+/* ------------------------------
+   WHY CHOOSE US
+-------------------------------*/
+.choose-section {
+  padding: 70px 20px;
+  background: #f5f6f8;
+}
+
+.choose-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--slate);
+}
+
+.choose-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.choose-card {
+  background: #ffffff;
+  padding: 28
 }
