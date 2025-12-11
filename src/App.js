@@ -28,7 +28,7 @@ export default function App() {
 
         {/* Desktop Menu */}
         <div className="nav-links desktop-menu">
-          <Link to="/"></Link>
+          <Link to="/">Home</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/team">Team</Link>
 
@@ -69,7 +69,9 @@ export default function App() {
         {menuOpen && (
           <div className="mobile-menu">
             <Link to="/" onClick={() => setMenuOpen(false)}></Link>
-            <Link to="/team">Team</Link>
+            <Link to="/">Home</Link>
+           <Link to="/team">Team</Link>
+
 
             <details className="mobile-dropdown">
     <summary>Services</summary>
