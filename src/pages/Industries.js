@@ -1,83 +1,76 @@
 import React from "react";
-import {
-  GraduationCap,
-  Stethoscope,
-  ShoppingBag,
-  Building2,
-  Plane,
-  Factory,
-  Layers
-} from "lucide-react";
-
+import heroImg from "../images/side.jpg";
+import casestudy from "../images/casestudy.jpeg";
+import manufacturing from "../images/manufacturing.jpg";
+import retail from "../images/retail.jpg";
+import healthcare from "../images/healthcare.jpg";
+import Footer from "./Footer";
 export default function Industries() {
   const industries = [
     {
-      icon: <GraduationCap size={48} />,
+      image: casestudy,
       title: "Education",
       description:
-        "Smart digital solutions for institutes, e-learning platforms, online assessments, and student management.",
+        "Digital learning platforms, assessment systems, student management, and virtual classrooms.",
     },
     {
-      icon: <Stethoscope size={48} />,
+      image: healthcare,
       title: "Healthcare",
       description:
-        "AI-powered medical tools, patient management systems, and secure digital transformation for hospitals.",
+        "AI-powered diagnosis, telemedicine solutions, EMR systems, and patient engagement platforms.",
     },
     {
-      icon: <ShoppingBag size={48} />,
+      image: retail,
       title: "Retail",
       description:
-        "E-commerce platforms, POS software, inventory systems, and customer engagement solutions.",
+        "Omnichannel commerce, POS systems, customer analytics, and inventory automation.",
     },
+    
+   
     {
-      icon: <Building2 size={48} />,
-      title: "Real Estate",
-      description:
-        "Property listing portals, CRM systems, virtual tour integrations, and automated workflows.",
-    },
-    {
-      icon: <Plane size={48} />,
-      title: "Travel",
-      description:
-        "Booking engines, itinerary management, AI-based recommendation systems, and customer portals.",
-    },
-    {
-      icon: <Factory size={48} />,
+      image: manufacturing,
       title: "Manufacturing",
       description:
-        "Automation tools, ERP systems, supply chain optimization, and IoT-enabled workflows.",
+        "IoT systems, ERP modules, process automation, and supply-chain optimization tools.",
     },
-    {
-      icon: <Layers size={48} />,
-      title: "Custom Industries",
-      description:
-        "We build tailor-made solutions for unique business needs across any industry.",
-    },
+    
   ];
 
   return (
     <div className="industries-page">
-
-      {/* HEADER */}
-      <section className="industries-header">
+      
+      {/* ===== HERO ===== */}
+      <section 
+        className="industries-header"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         <h1 className="industries-title">Industries We Serve</h1>
         <p className="industries-subtitle">
-          Delivering technology solutions across multiple domains with precision, innovation, and trust.
+          Building scalable, secure and intelligent digital solutions for global industries.
         </p>
       </section>
 
-      {/* GRID OF INDUSTRY CARDS */}
+      {/* ===== GRID SECTION ===== */}
       <section className="industries-section">
         <div className="industries-grid">
           {industries.map((ind, index) => (
             <div className="industry-card" key={index}>
-              <div className="industry-icon">{ind.icon}</div>
+              <div className="industry-img-wrapper">
+                <img src={ind.image} alt={ind.title} className="industry-img" />
+              </div>
+
               <h3 className="industry-title">{ind.title}</h3>
               <p className="industry-desc">{ind.description}</p>
             </div>
           ))}
         </div>
       </section>
+      <Footer/>
+
     </div>
   );
 }

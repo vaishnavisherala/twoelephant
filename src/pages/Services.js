@@ -1,73 +1,121 @@
 import React from "react";
-import { Code, Smartphone, Layout, Cloud, Cpu, Lightbulb, MonitorCheck } from "lucide-react";
+import {
+  Cpu,
+  ShieldCheck,
+  Lightbulb,
+  Rocket,
+  Code,
+  Cloud,
+  Share2,
+  LineChart,
+} from "lucide-react";
 
+import heroImg from "../images/side.jpg";
+import casetudy1 from "../images/casestudy.jpeg";
+import producteng from "../images/productengg.jpg";
+import cyber from "../images/cyber.jpg";
+import dataAI from "../images/dataAI.png";
+import ommimarket from "../images/ommimarket.png";
+import Footer from "./Footer";
 export default function Services() {
   const services = [
     {
-      icon: <Code size={48} />,
-      title: "Web Development",
+        image: casetudy1,
+       title: "Digital Transformation",
       description:
-        "Modern, scalable, and secure web applications built using the latest technologies and best industry standards.",
+        "Modernizing processes and building scalable digital systems for education, health, and livelihood platforms.",
+      sub:
+        "From legacy modernization to workflow automation, we help organizations become future-ready.",
     },
     {
-      icon: <Smartphone size={48} />,
-      title: "Mobile App Development",
+       image: producteng,
+      title: "Product Engineering",
       description:
-        "High-performance Android and iOS applications designed for seamless user experience and reliability.",
+        "Designing and developing inclusive, modular, and secure digital products from concept to launch.",
+      sub:
+        "Built with scalable architecture, user-centric design, and rigorous quality engineering.",
     },
     {
-      icon: <MonitorCheck size={48} />,
-      title: "Software Solutions",
+       image: cyber,
+      title: "Cybersecurity & Risk Management",
       description:
-        "Custom software tailored to your business needs, improving efficiency, automation, and productivity.",
+        "Protecting sensitive data through vulnerability assessments, compliance frameworks, and continuous monitoring.",
+      sub: "Ensuring safety, privacy, and security for communities and partners.",
     },
     {
-      icon: <Layout size={48} />,
-      title: "UI / UX Design",
+       image: dataAI,
+      title: "AI & Data Solutions",
       description:
-        "Clean, intuitive, and user-friendly interface designs that elevate digital experiences.",
+        "AI/ML solutions for actionable insights, personalization, and predictive intelligence.",
+      sub:
+        "Ethical AI practices ensuring fairness, transparency, and data responsibility.",
     },
     {
-      icon: <Cpu size={48} />,
-      title: "AI & Machine Learning",
+       image: ommimarket,
+      title: "Omnichannel Marketing & Engagement",
       description:
-        "Intelligent automation, predictive models, analytics, and AI-powered solutions to drive innovation.",
+        "Engagement strategies connecting communities, partners, and stakeholders effectively.",
+      sub:
+        "Digital campaigns, analytics insights, and multi-platform engagement tools.",
     },
-    {
-      icon: <Lightbulb size={48} />,
-      title: "IT Consulting",
-      description:
-        "Expert guidance in technology strategy, digital transformation, business optimization, and system integration.",
-    },
-    {
-      icon: <Cloud size={48} />,
-      title: "Cloud Services",
-      description:
-        "Cloud migration, DevOps support, infrastructure setup, and scalable cloud-based solutions.",
-    },
+    
   ];
 
   return (
     <div className="services-page">
 
-      <section className="services-header">
-        <h1 className="services-title">Our Services</h1>
-        <p className="services-subtitle">
-          Empowering businesses with powerful, scalable, and innovative technology solutions.
-        </p>
-      </section>
+      {/* ================= HERO ================= */}
+      <section
+        className="services-header"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <h2 className="services-upper">Software Services</h2>
+        <h3 className="services-up">Our Services And Works</h3>
+        </section>
+        {/* ================= FEATURED SERVICES ================= */}
+      
 
-      <section className="services-section">
-        <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <div className="service-icon">{service.icon}</div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-desc">{service.description}</p>
+      {/* ================= SERVICE DETAILS WITH IMAGES ================= */}
+      {services.map((service, index) => (
+        <section
+          key={index}
+          className={`service-detail ${index % 2 === 1 ? "reverse" : ""}`}
+        >
+          <div className="service-detail-container">
+            <div className="service-detail-content">
+              {/* <div className="service-detail-icon">{service.icon}</div> */}
+              <h2 className="service-detail-title">{service.title}</h2>
+              <p className="service-detail-description">{service.description}</p>
+              <p className="service-detail-sub">{service.sub}</p>
+              <button className="service-detail-btn">
+                Explore Service <span>→</span>
+              </button>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="service-detail-image">
+              <div 
+                className="service-image-placeholder"
+                style={{ background: service.gradient }}
+              >
+                <img
+  src={service.image}
+  alt={service.title}
+  className="service-image"
+/>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+
+      {/* ================= CTA SECTION ================= */}
+
+
+      {/* ================= FOOTER ================= */}
+      <Footer/>
     </div>
   );
 }

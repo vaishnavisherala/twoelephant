@@ -29,6 +29,8 @@ import {
 import image1 from "../images/image1.png";
 import image from "../images/image.png";
 import side from "../images/side.jpg";
+import casestudyImg from "../images/casestudy.jpeg";
+import Footer from "./Footer";
 
 export default function Home() {
   const slides = [
@@ -59,8 +61,8 @@ export default function Home() {
       icon: <Users size={32} strokeWidth={1.5} />,
       text: "Collaboration that strengthens our ability to succeed.",
       angle: -60,
-      x: -180,
-      y: -80,
+      x: -219,
+      y: -220,
     },
     {
       title: "HONESTY",
@@ -68,15 +70,15 @@ export default function Home() {
       text: "Transparency and ethics guide every decision we make.",
       angle: -20,
       x: -10,
-      y: -150,
+      y: -270,
     },
     {
       title: "QUALITY",
       icon: <Award size={32} strokeWidth={1.5} />,
       text: "World-class execution with consistency and precision.",
       angle: 20,
-      x: 180,
-      y: -80,
+      x: 220,
+      y: -220,
     },
     {
       title: "CUSTOMERS",
@@ -84,7 +86,7 @@ export default function Home() {
       text: "Customer success is the core of our purpose.",
       angle: 60,
       x: 220,
-      y: 120,
+      y: 30,
     },
     {
       title: "GOALS",
@@ -92,7 +94,7 @@ export default function Home() {
       text: "Clear objectives aligned with business growth.",
       angle: 140,
       x: 0,
-      y: 210,
+      y: 140,
     },
     {
       title: "INNOVATION",
@@ -100,7 +102,7 @@ export default function Home() {
       text: "Ideas that reshape industries and possibilities.",
       angle: -140,
       x: -220,
-      y: 120,
+      y: 30,
     },
   ];
 
@@ -224,8 +226,11 @@ export default function Home() {
 
       {/* ===================== CORE VALUES (Circular Infographic) ===================== */}
      <section className="values-wheel-section">
+      <div className="values-intro">
+        <p className="values-intro-text">Two Elephants is built on the values that elephants naturally represent — unmatched strength, deep loyalty, emotional intelligence, and a remarkable memory. These qualities define the way we work with our clients: strong enough to tackle any challenge, caring enough to understand your needs, and honest enough to always stand by our word.</p>
+      </div>
       <div className="wheel-container">
-        <h2>Core values</h2>
+<div className="core-values-center-text">CORE VALUES</div>
         {/* Arc segments */}
         {segments.map((s, i) => (
           <React.Fragment key={i}>
@@ -233,9 +238,11 @@ export default function Home() {
             <div
               className="outside-text"
               style={{
-                transform: `translate(${s.x}px, ${s.y}px)`,
+                left: `calc(50% + ${s.x}px)`,
+                top: `calc(50% + ${s.y}px)`,
               }}
             >
+              <div className="value-icon-circle">{s.icon}</div>
               <h4>{s.title}</h4>
               <p>{s.text}</p>
             </div>
@@ -247,90 +254,52 @@ export default function Home() {
 
       {/* ===================== CASE STUDIES PREVIEW ===================== */}
       <section className="case-studies-preview-section">
-      
         <div className="case-preview-container">
           <div className="case-preview-card">
-            <div className="case-preview-content">
-              <span className="case-label">CASE STUDY</span>
-              <h3 className="case-preview-title">Digital Transformation Success</h3>
-              <p className="case-preview-desc">
-                Discover how we helped a leading organization modernize their systems, 
-                improve efficiency, and drive innovation through cutting-edge technology solutions.
-              </p>
-              <button 
-                onClick={() => window.location.href = '/case-studies'} 
-                className="btn case-link-btn"
-              >
-                View Case Studies <ArrowRight className="icon" />
-              </button>
+            <div className="case-preview-grid">
+              <div className="case-preview-image">
+                <img src={casestudyImg} alt="Digital Transformation Case Study" />
+              </div>
+              <div className="case-preview-content">
+                <span className="case-label">CASE STUDY</span>
+                <h3 className="case-preview-title">Digital Transformation Success</h3>
+                <p className="case-preview-desc">
+                  Discover how we helped a leading organization modernize their systems, 
+                  improve efficiency, and drive innovation through cutting-edge technology solutions.
+                </p>
+                
+                <div className="case-highlights">
+                  <div className="highlight-item">
+                    <span className="highlight-label">Challenge</span>
+                    <p>Legacy systems hindering scalability and growth</p>
+                  </div>
+                  <div className="highlight-item">
+                    <span className="highlight-label">Solution</span>
+                    <p>Cloud migration and modern architecture redesign</p>
+                  </div>
+                  <div className="highlight-item">
+                    <span className="highlight-label">Result</span>
+                    <p>40% improvement in performance and 25% cost reduction</p>
+                  </div>
+                </div>
+                
+                <button 
+                  onClick={() => window.location.href = '/case-studies'} 
+                  className="btn case-link-btn"
+                >
+                  View Case Studies <ArrowRight className="icon" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ===================== CONTACT CTA ===================== */}
-      <section id="contact" className="contact-section">
-        <div className="contact-cta-content">
-          <h2 className="contact-cta-title">Ready to Transform Your Business?</h2>
-          <p className="contact-cta-text">
-            Let's build something strong together. Contact us today to discover how
-            we can elevate your business with innovative IT solutions.
-          </p>
-          <div className="contact-buttons">
-            <button 
-              onClick={() => window.location.href = '/contact'} 
-              className="btn contact-btn primary"
-            >
-              Get Started <ChevronRight className="icon" />
-            </button>
-            <button 
-              onClick={() => scrollToSection("services")} 
-              className="btn contact-btn secondary"
-            >
-              Explore Services
-            </button>
-          </div>
-        </div>
-      </section>
+      
 
       {/* ===================== FOOTER ===================== */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-column footer-brand">
-           <img src="/assets/logo.png" alt="Two Elephants" className="footer-logo-img" />
-
-            <h3 className="footer-logo">Two Elephants</h3>
-            <p className="footer-desc">Advanced digital engineering solutions and IT services for enterprises worldwide.</p>
-          </div>
-          <div className="footer-column">
-            <h4 className="footer-column-title">Company</h4>
-            <ul className="footer-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about-us">About Us</a></li>
-              <li><a href="/career">Careers</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4 className="footer-column-title">Our Services</h4>
-            <ul className="footer-menu">
-              <li><a href="/services">Web Development</a></li>
-              <li><a href="/services">Mobile Apps</a></li>
-              <li><a href="/services">Cloud Services</a></li>
-              <li><a href="/services">IT Consulting</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4 className="footer-column-title">Contact Us</h4>
-            <p className="footer-contact"><strong></strong><br />Your Office Address</p>
-            <p className="footer-contact"><strong></strong><br />info@twoelephants.com</p>
-            <p className="footer-contact"><strong></strong><br />www.twoelephants.com</p>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>© 2025 Two Elephants. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

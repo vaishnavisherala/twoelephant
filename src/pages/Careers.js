@@ -1,137 +1,123 @@
 import React from "react";
+import heroImg from "../images/side.jpg";
+import team1 from "../images/team1.jpeg";
+import team2 from "../images/team2.jpeg";
+import team3 from "../images/team3.jpeg";
+import team4 from "../images/team4.jpeg";
+import "../pages/Careers.css";
 
 export default function Careers() {
-  const openings = [
-    {
-      title: "Frontend Developer",
-      exp: "1–3 years",
-      skills: "React, JavaScript, UI/UX, HTML/CSS",
-    },
-    {
-      title: "Backend Developer",
-      exp: "2–4 years",
-      skills: "Node.js, APIs, SQL, MongoDB",
-    },
-    {
-      title: "UI/UX Designer",
-      exp: "0–2 years",
-      skills: "Figma, Wireframing, Prototyping",
-    },
-    {
-      title: "Full Stack Intern",
-      exp: "Internship",
-      skills: "React, Node.js (Training provided)",
-    },
-  ];
-
   return (
     <div className="career-page">
 
-      {/* HEADER */}
-      <section className="career-header">
-        <h1 className="career-title">Careers</h1>
-        <p className="career-subtitle">
-          Build your future with strength, care, and honesty — the Two Elephants way.
-        </p>
-      </section>
+      {/* HERO */}
+      <section style={{backgroundImage:`url(${heroImg})`,backgroundSize:"cover", display:"flex",height:"800px"}} className="career-hero">
+        <div className="career-hero-left">
+          <span className="career-badge">CAREERS</span>
+          <h1>
+            Start Your Career <br />
+            <span>at Two Elephants</span>
+          </h1>
+          <p>
+            Build your future with a team that values innovation,
+            learning, and long-term growth.  
+            We create impact — together.
+          </p>
 
-      {/* CURRENT OPENINGS */}
-      <section className="career-section">
-        <h2 className="section-title">Current Openings</h2>
-
-        <div className="openings-grid">
-          {openings.map((job, index) => (
-            <div key={index} className="opening-card">
-              <h3>{job.title}</h3>
-              <p><strong>Experience:</strong> {job.exp}</p>
-              <p><strong>Skills:</strong> {job.skills}</p>
-
-              <button className="btn apply-btn">Apply Now</button>
-            </div>
-          ))}
+          <div className="career-buttons">
+            <a href="#openings" className="career-btn primary">
+              View Open Roles
+            </a>
+            <a href="/contact" className="career-btn secondary">
+              Contact HR
+            </a>
+          </div>
         </div>
-      </section>
 
-      {/* INTERNSHIP PROGRAM */}
-      <section className="internship-section">
-        <h2 className="section-title">Internship Program</h2>
-
-        <p className="internship-text">
-          Our internship program helps young talent grow with real-world projects,
-          mentorship from experts, and hands-on technology experience.
-        </p>
-
-        <ul className="internship-list">
-          <li>✔ 3–6 month internship</li>
-          <li>✔ Work with real industry projects</li>
-          <li>✔ Get mentored by senior developers</li>
-          <li>✔ Certificate + full-time opportunity</li>
-        </ul>
-      </section>
-
-      {/* WORK CULTURE */}
-      <section className="culture-section">
-        <h2 className="section-title">Our Work Culture</h2>
-
-        <div className="culture-grid">
-          <div className="culture-card">
-            <h3>Teamwork</h3>
-            <p>We believe in growing together as a united, supportive team.</p>
-          </div>
-
-          <div className="culture-card">
-            <h3>Innovation</h3>
-            <p>We encourage creative thinking and new ideas every day.</p>
-          </div>
-
-          <div className="culture-card">
-            <h3>Respect</h3>
-            <p>We value diversity and treat everyone with kindness and respect.</p>
+        {/* RIGHT IMAGE GRID */}
+        <div className="career-hero-right">
+          {/* <img src={heroImg} className="hero-main-img" alt="career" /> */}
+          <div className="hero-grid">
+            <img src={team1} alt="team" />
+            <img src={team2} alt="team" />
+            <img src={team3} alt="team" />
+            <img src={team4} alt="team" />
           </div>
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="benefits-section">
-        <h2 className="section-title">Employee Benefits</h2>
+      {/* WHY JOIN */}
+      <section className="career-why">
+        <h2>Why Work With Us?</h2>
+        <p>
+          At Two Elephants, we don’t just hire employees —  
+          we build leaders, innovators, and long-term partners.
+        </p>
 
-        <ul className="benefits-list">
-          <li>✔ Competitive salary & performance bonuses</li>
-          <li>✔ Remote / Hybrid options</li>
-          <li>✔ Paid leave & holidays</li>
-          <li>✔ Employee wellness programs</li>
-          <li>✔ Upskilling training & certifications</li>
-        </ul>
+        <div className="career-values">
+          <div className="career-card">
+            <h4>🚀 Career Growth</h4>
+            <p>Structured learning, mentorship & real projects.</p>
+          </div>
+          <div className="career-card">
+            <h4>🤝 Supportive Culture</h4>
+            <p>People-first culture with strong team bonding.</p>
+          </div>
+          <div className="career-card">
+            <h4>💼 Real Impact</h4>
+            <p>Your work directly impacts clients & communities.</p>
+          </div>
+        </div>
       </section>
 
-      {/* APPLY NOW FORM */}
-      <section className="apply-section">
-        <h2 className="section-title">Apply Now</h2>
+      
+<footer className="footer">
+        <div className="footer-container">
+          <div className="footer-column footer-brand">
+            <img
+              src="/assets/logo.png"
+              alt="Two Elephants"
+              className="footer-logo-img"
+            />
+            <h3 className="footer-logo">Two Elephants</h3>
+            <p className="footer-desc">
+              Advanced digital engineering solutions and IT services for
+              enterprises worldwide.
+            </p>
+          </div>
 
-        <form className="apply-form">
-          <label>
-            Full Name
-            <input type="text" placeholder="Enter your name" required />
-          </label>
+          <div className="footer-column">
+            <h4 className="footer-column-title">Company</h4>
+            <ul className="footer-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us">About Us</a></li>
+              <li><a href="/career">Careers</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-          <label>
-            Email
-            <input type="email" placeholder="Enter your email" required />
-          </label>
+          <div className="footer-column">
+            <h4 className="footer-column-title">Our Services</h4>
+            <ul className="footer-menu">
+              <li><a href="/services">Digital Transformation</a></li>
+              <li><a href="/services">AI Solutions</a></li>
+              <li><a href="/services">Cybersecurity</a></li>
+              <li><a href="/services">Product Engineering</a></li>
+            </ul>
+          </div>
 
-          <label>
-            Upload Resume
-            <input type="file" accept=".pdf,.doc,.docx" required />
-          </label>
+          <div className="footer-column">
+            <h4 className="footer-column-title">Contact Us</h4>
+            <p className="footer-contact"><br />Your Office Address</p>
+            <p className="footer-contact"><br />info@twoelephants.org</p>
+            <p className="footer-contact"><br />www.twoelephants.org</p>
+          </div>
+        </div>
 
-          <label>
-            Message
-            <textarea placeholder="Tell us why you'd be a great fit..." rows="5"></textarea>
-          </label>
-
-          <button type="submit" className="btn submit-btn">Submit Application</button>
-        </form>
-      </section>
+        <div className="footer-bottom">
+          <p>© 2025 Two Elephants. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }

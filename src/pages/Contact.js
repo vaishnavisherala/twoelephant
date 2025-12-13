@@ -1,11 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import heroImg from "../images/side.jpg";
+import Footer from "../pages/Footer";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("❌ Failed to send message.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("❌ Server error. Try again later.");
+    }
+  };
+
   return (
     <div className="contact-page">
 
       {/* HEADER */}
-      <section className="contact-header">
+      <section
+        className="contact-header"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h1 className="contact-title">Contact Us</h1>
         <p className="contact-subtitle">
           We are here to support you with strength, care, and honesty.
@@ -14,71 +66,85 @@ export default function Contact() {
 
       {/* CONTACT DETAILS + FORM */}
       <section className="contact-section">
-
         <div className="contact-grid">
 
-          {/* LEFT: CONTACT DETAILS */}
+          {/* LEFT */}
           <div className="contact-info">
             <h2>Get in Touch</h2>
 
-            <p><strong>📞 Phone:</strong> +91 98765 43210</p>
-            <p><strong>📧 Email:</strong> contact@twoelephants.com</p>
+            <p><strong>📞 Phone:</strong> +91 9175484351, 7249570505</p>
+            <p><strong>📧 Email:</strong> support@twoelephants.org</p>
+
             <p><strong>📍 Address:</strong></p>
             <p>
-              Two Elephants Pvt. Ltd.<br />
-              Near WIT solapur,<br />
-              India – 413005
+              India: 155/4/3 Gandhi Nagar Akkalkot Road<br />
+              Solapur – 413005
+            </p>
+            <p>
+              USA: 2903 Rutherford Place Ct, Katy<br />
+              Houston, TX – 77494
             </p>
 
-            <h3>Working Hours:</h3>
+            <h3>Working Hours</h3>
             <p>Mon – Sat : 10:00 AM – 6:00 PM</p>
           </div>
 
-          {/* RIGHT: CONTACT FORM */}
-          <form className="contact-form">
-            <label>
-              Full Name
-              <input type="text" placeholder="Enter your name" required />
-            </label>
+          {/* RIGHT: FORM */}
+          <form className="contact-form" onSubmit={handleSubmit}>
 
-            <label>
-              Email
-              <input type="email" placeholder="Enter your email" required />
-            </label>
+            <div className="input-group">
+              <label>Full Name</label>
+              <input
+                id="name"
+                type="text"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-            <label>
-              Phone Number
-              <input type="text" placeholder="Enter your phone number" />
-            </label>
+            <div className="input-group">
+              <label>Email</label>
+              <input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-            <label>
-              Message
-              <textarea placeholder="Write your message..." rows="5"></textarea>
-            </label>
+            <div className="input-group">
+              <label>Phone Number</label>
+              <input
+                id="phone"
+                type="text"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </div>
 
-            <button type="submit" className="btn contact-btn">Submit</button>
+            <div className="input-group">
+              <label>Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <button type="submit" className="btn contact-btn">
+              Send Message
+            </button>
+
+            {status && <p className="form-status">{status}</p>}
           </form>
-
         </div>
       </section>
-
-      {/* GOOGLE MAP */}
-      <section className="map-section">
-        <h2 className="section-title">Find Us on the Map</h2>
-
-        <div className="map-container">
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.02404920515!2d77.350737!3d12.954294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670f1a662fb%3A0xdeb6d461c9c37b4!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-            width="100%"
-            height="400"
-            style={{ border: "0", borderRadius: "12px" }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section>
-
+      
+      <Footer/>
     </div>
   );
 }

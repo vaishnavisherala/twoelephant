@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
-import Career from './pages/Career';
+import Careers from './pages/Careers';
 import { Menu, X } from "lucide-react";
 import Industries from './pages/Industries';
 import Team from './pages/Team';
@@ -44,7 +44,7 @@ export default function App() {
   </div>
           <Link to="/case-studies">Case Studies</Link>
 
-          <Link to="/career">Career</Link>
+          <Link to="/careers">Career</Link>
           {/* <Link to="/login">Login</Link> */}
           {/* <Link to="/register">Register</Link> */}
           <button className="nav-contact-btn" onClick={() => window.location.href = '/contact'}>
@@ -81,11 +81,11 @@ export default function App() {
      
     </div>
   </details>
-            <Link to="/career" onClick={() => setMenuOpen(false)}>Career</Link>
+            <Link to="/careers" onClick={() => setMenuOpen(false)}>Career</Link>
             {/* <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
             <Link to="/register" onClick={() => setMenuOpen(false)}>Register</Link> */}
             <Link to="/about-us" onClick={() => setMenuOpen(false)}>About Us</Link> 
-            <button className="nav-contact-btn" onClick={() => window.location.href = '/contact'}>
+            <button className="button" onClick={() => window.location.href = '/contact'}>
   Contact Us
 </button>
 
@@ -101,7 +101,7 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path='/about-us' element={<AboutUs/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path='/career' element={<Career/>}/>
+          <Route path='/careers' element={<Careers/>}/>
           <Route path='/industries' element={<Industries/>}/>
           <Route path="/team" element={<Team />} />
           <Route path="/case-studies" element={<CaseStudies />} />
