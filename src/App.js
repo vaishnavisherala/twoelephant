@@ -12,7 +12,7 @@ import Industries from './pages/Industries';
 import Team from './pages/Team';
 import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
-
+import logo from "../src/images/image1.png"
 
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
     <div className="app">
       <nav className="nav responsive-nav">
         <div className="brand">
-          <img src="/assets/logo.png" alt="Two Elephants" className="logo" />
+          <img src={logo} alt="Two Elephants" className="logo" />
           <span className="brand-text">TWO ELEPHANTS</span>
         </div>
 

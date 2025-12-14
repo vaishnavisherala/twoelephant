@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from "../images/image.png"
 const Footer = () => {
   return (
     <div>
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-container">
           {/* Footer content blocks */}
           <div className="footer-column footer-brand">
-            <img src="/assets/logo.png" alt="Two Elephants" className="footer-logo-img" />
+            <img src={logo} alt="Two Elephants" className="footer-logo-img" />
             <h3 className="footer-logo">Two Elephants</h3>
             <p className="footer-desc">
               Advanced digital engineering solutions and IT services for enterprises worldwide.
