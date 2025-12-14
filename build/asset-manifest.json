@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/twoelephant/static/css/main.96817089.css",
-    "main.js": "/twoelephant/static/js/main.ee26fdc5.js",
+    "main.js": "/twoelephant/static/js/main.b35687e0.js",
     "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
+    "static/media/image1.png": "/twoelephant/static/media/image1.7db107a0da2b29eb65ce.png",
+    "static/media/image.png": "/twoelephant/static/media/image.2a83765b74c51a1a0e2b.png",
     "static/media/Abhi.jpeg": "/twoelephant/static/media/Abhi.a48c8524bcfff06d137c.jpeg",
     "static/media/dataAI.png": "/twoelephant/static/media/dataAI.ee4d0357d6da16a8aafc.png",
     "static/media/productengg.jpg": "/twoelephant/static/media/productengg.516ebb2ce7c9a01474af.jpg",
@@ -19,10 +21,10 @@
     "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
     "index.html": "/twoelephant/index.html",
     "main.96817089.css.map": "/twoelephant/static/css/main.96817089.css.map",
-    "main.ee26fdc5.js.map": "/twoelephant/static/js/main.ee26fdc5.js.map"
+    "main.b35687e0.js.map": "/twoelephant/static/js/main.b35687e0.js.map"
   },
   "entrypoints": [
     "static/css/main.96817089.css",
-    "static/js/main.ee26fdc5.js"
+    "static/js/main.b35687e0.js"
   ]
 }
