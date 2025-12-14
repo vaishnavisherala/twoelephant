@@ -380,53 +380,6 @@ button {
   margin-top: 25px;
 }
 
-/* ----------------------------------
-   CORE VALUES
----------------------------------- */
-.values-section {
-  padding: 80px 20px;
-  background: var(--white);
-}
-
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 60px;
-  color: var(--slate);
-}
-
-.values-grid {
-  display: grid;
-  max-width: 1200px;
-  margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.value-card {
-  background: #fafafa;
-  padding: 40px 30px;
-  border-radius: 14px;
-  text-align: center;
-  transition: 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-.value-icon {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-}
-
-.value-card h3 {
-  font-size: 1.7rem;
-}
-
 
 
 
@@ -2878,27 +2831,25 @@ button {
 /* ======================================================
    CORE VALUES WHEEL (Premium Corporate Design)
 ====================================================== */
-
+/* ================= CORE VALUES SECTION ================= */
 .values-wheel-section {
   background: #e3f3fa;
-  padding: 40px 30px;
+  padding: 60px 30px;
   text-align: center;
   position: relative;
-  height: 800px;
 }
 
-/* Intro section with title and description */
-
-
+/* Intro text */
 .values-intro-text {
-  font-size: 20px;
-  line-height: 1.8;
-  font-style: italic;
-  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 600;
   color: #475569;
-  margin: 0px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
 }
 
+/* ================= DESKTOP WHEEL ================= */
 .wheel-container {
   width: 750px;
   height: 750px;
@@ -2906,191 +2857,133 @@ button {
   position: relative;
 }
 
-/* Outside text */
+/* Center text */
+.core-values-center-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  font-weight: 800;
+  color: #1d3b53;
+  letter-spacing: 2px;
+  z-index: 5;
+}
+
+/* Outside text blocks */
 .outside-text {
   width: 200px;
-  text-align: center;
   position: absolute;
-  left: 50%;
-  top: 40%;
-  /* Position will be adjusted by left/top from Home.js; center the element around that point */
   transform: translate(-50%, -50%);
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .outside-text h4 {
-  margin: 0;
   font-size: 18px;
   font-weight: 700;
   color: #1d3b53;
+  margin: 0;
 }
 
 .outside-text p {
-  margin: 8px 0 0;
   font-size: 14px;
   color: #475569;
+  margin-top: 6px;
 }
 
-/* Icon circle for each value */
+/* Icon circle */
 .value-icon-circle {
-  width: 76px;
-  height: 76px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid rgba(29,59,83,0.12);
+  background: #fff;
+  border: 2px solid rgba(29, 59, 83, 0.12);
   display: flex;
   align-items: center;
+  margin-top: 20px;
   justify-content: center;
-  margin-bottom: 12px;
-  transition: all 0.22s cubic-bezier(.2,.9,.3,1);
+  margin-bottom: 10px;
   color: #1d3b53;
+  transition: 0.25s ease;
 }
 
 .outside-text:hover .value-icon-circle {
   border-color: #f4a029;
   color: #f4a029;
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
-.core-values-center-text {
-  position: absolute;
-  top: 80%;               /* Moves text inside the top circle area */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 32px;
-  font-weight: 800;
-  color: #1d3b53;
-  letter-spacing: 2px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 900px) {
-  .values-wheel-section {
-    padding: 60px 30px;
-  }
-
-  .values-intro-text {
-    font-size: 16px;
-    margin: 0px 0px 20px 0px;
-  }
-
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
   .wheel-container {
-    width: 550px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
   }
 
   .outside-text {
-    width: 160px;
-  }
-
-  .outside-text h4 {
-    font-size: 16px;
-  }
-
-  .outside-text p {
-    font-size: 12px;
-  }
-
-  .value-icon-circle {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    width: 170px;
   }
 
   .core-values-center-text {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
+/* ================= MOBILE (STACKED MODE) ================= */
 @media (max-width: 600px) {
-  .values-wheel-section {
-    padding: 40px 20px;
-  }
-
-  .values-intro-text {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0px 0px 15px 0px;
-  }
-
   .wheel-container {
-    width: 350px;
-    height: 300px;
-  }
-
-  .outside-text {
-    width: 130px;
-  }
-
-  .outside-text h4 {
-    font-size: 14px;
-  }
-
-  .outside-text p {
-    font-size: 11px;
-    line-height: 1.4;
-  }
-
-  .value-icon-circle {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 8px;
-    border: 1.5px solid rgba(29,59,83,0.12);
-  }
-
-}
-
-@media (max-width: 400px) {
-  .values-wheel-section {
-    padding: 30px 15px;
-  }
-
-  .values-intro-text {
-    font-size: 12px;
-    margin: 0px 0px 10px 0px;
-  }
-
-  .wheel-container {
-    width: 280px;
-    height: 280px;
-  }
-
-  .outside-text {
-    width: 110px;
-  }
-
-  .outside-text h4 {
-    font-size: 12px;
-  }
-
-  .outside-text p {
-    font-size: 10px;
-  }
-
-  .value-icon-circle {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 6px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 30px;
   }
 
   .core-values-center-text {
-    font-size: 14px;
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .outside-text {
+    position: static;
+    transform: none;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  }
+
+  .value-icon-circle {
+    margin-bottom: 12px;
+  }
+
+  .outside-text h4 {
+    font-size: 16px;
+  }
+
+  .outside-text p {
+    font-size: 13px;
   }
 }
-  
-.core-values-center-text {
-  position: absolute;
-  top: 42%;               /* Moves text inside the top circle area */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  font-weight: 800;
-  color: #1d3b53;
-  letter-spacing: 2px;
-  z-index: 5;
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 400px) {
+  .values-intro-text {
+    font-size: 14px;
+  }
+
+  .outside-text {
+    padding: 16px;
+  }
 }
+
 
 
 
@@ -3393,7 +3286,7 @@ button {
 
   .hero-slider-section {
     padding: 80px 20px 60px;
-    min-height: auto;
+    min-height: 100vh;
   }
 
   .hero-chip-row {
