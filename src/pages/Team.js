@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import Abhi from "../images/Abhi.jpeg";
-import Au from "../images/Abhi.jpeg";
+import Au from "../images/Au.jpeg";
 import pt from "../images/pt.jpeg";
 import Sapna from "../images/Sapna.jpeg";
 import pankaj from "../images/pankaj.jpeg";
