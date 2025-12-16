@@ -1836,7 +1836,6 @@ button {
 /* ------------------------------
    CASE STUDY CARD
 --------------------------------*/
-/* ================= CASE STUDY IMAGE ================= */
 
 .case-img-wrapper {
   width: 100%;
@@ -2237,13 +2236,7 @@ button {
   color: var(--accent);
 }
 
-/* ------------------------------
-   CONTACT SECTION
---------------------------------*/
-/* .contact-section {
-  padding: 70px 20px;
-  background: white;
-} */
+
 
 .contact-grid {
   max-width: 1200px;
@@ -3554,24 +3547,6 @@ button {
   line-height: 1.6;
 }
 
-
-
-
-
-/* =============================
-   ABOUT INFO SECTION
-============================= */
-
-
-
-
-
-
-
-
-/* =============================
-   VISION + MISSION
-============================= */
 .vision-mission-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3629,9 +3604,7 @@ button {
     transform: rotate(0deg);
   }
 }
-* ------------------------------
-   CASE STUDY CARD
---------------------------------*/
+
 .case-section {
   padding: 70px 20px;
   background: white;
