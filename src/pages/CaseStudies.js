@@ -1,93 +1,89 @@
 import React from "react";
+import Footer from "./Footer";
+
+import eduImg from "../images/edu.jpeg";
+import helImg from "../images/hel.jpeg";
+import eImg from "../images/e.jpeg";
 
 export default function CaseStudies() {
   const caseStudies = [
     {
       title: "Education Management System",
-      problem:
-        "The client struggled with manual student tracking, inefficient communication, and outdated academic workflows.",
-      solution:
-        "We developed a complete web-based ERP system for attendance, fees, communication, and performance tracking.",
-      techStack: ["React", "Node.js", "MongoDB", "AWS", "Figma"],
-      impact:
-        "Operational efficiency increased by 70%, communication improved, and academic tasks were automated.",
-      images: [
-        "/assets/case/edu1.png",
-        "/assets/case/edu2.png"
-      ]
+      domain: "Education",
+      description:
+        "A scalable education ERP platform that digitized attendance, fees, communication, and academic workflows.",
+      techStack: ["React", "Node.js", "MongoDB", "AWS"],
+      image: eduImg,
     },
     {
       title: "Healthcare Patient Portal",
-      problem:
-        "Hospitals needed a secure digital system for patient appointments, reports, and medical history management.",
-      solution:
-        "We built a HIPAA-compliant patient portal with secure login, report downloads, appointment booking, and reminders.",
-      techStack: ["Angular", "Express.js", "MySQL", "Azure", "Flutter"],
-      impact:
-        "Patient engagement grew by 55%, appointment no-shows reduced by 30%, and operational load decreased.",
-      images: [
-        "/assets/case/health1.png",
-        "/assets/case/health2.png"
-      ]
+      domain: "Healthcare",
+      description:
+        "A secure patient portal enabling appointments, medical records access, and automated reminders.",
+      techStack: ["Angular", "Express.js", "MySQL", "Azure"],
+      image: helImg,
     },
     {
       title: "Retail E-Commerce Platform",
-      problem:
-        "Retail brand needed a scalable online store with inventory tracking, offers, and personalized suggestions.",
-      solution:
-        "We delivered a full e-commerce platform with admin panel, product catalog, secure payments, and real-time inventory.",
-      techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      impact:
-        "Online sales increased by 120% within 6 months, with 40% repeat customer rate.",
-      images: [
-        "/assets/case/retail1.png",
-        "/assets/case/retail2.png"
-      ]
-    }
+      domain: "E-Commerce",
+      description:
+        "A high-performance online retail platform with real-time inventory, payments, and admin dashboard.",
+      techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      image: eImg,
+    },
   ];
 
   return (
     <div className="case-page">
-
-      {/* HEADER */}
-      <section className="case-header">
-        <h1 className="case-title">Case Studies & Portfolio</h1>
-        <p className="case-subtitle">
-          Real-world success stories powered by innovation, technology, and our commitment to excellence.
-        </p>
+      {/* HERO (UNCHANGED) */}
+      <section
+        className="team-hero-banner"
+        style={{
+          backgroundImage: `url(${require("../images/side.jpg")})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          padding: "120px 20px",
+          position: "relative",
+        }}
+      >
+        <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)" }} />
+        <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
+          <h1 style={{ fontSize: 46, fontWeight: 700 }}>Case Studies</h1>
+          <p style={{ fontSize: 20, maxWidth: 720, margin: "0 auto" }}>
+            Solving complex business challenges with technology-driven solutions.
+          </p>
+        </div>
       </section>
 
-      {/* CASE STUDIES LIST */}
-      <section className="case-section">
-        {caseStudies.map((study, index) => (
-          <div className="case-card" key={index}>
-            <h2 className="case-card-title">{study.title}</h2>
-
-            <div className="case-content">
-              <div>
-                <h3 className="case-label">Client Problem</h3>
-                <p className="case-text">{study.problem}</p>
-
-                <h3 className="case-label">Our Solution</h3>
-                <p className="case-text">{study.solution}</p>
-
-                <h3 className="case-label">Tech Stack</h3>
-                <ul className="tech-list">
-                  {study.techStack.map((tech, i) => (
-                    <li key={i}>{tech}</li>
-                  ))}
-                </ul>
-
-                <h3 className="case-label">Output / Impact</h3>
-                <p className="case-text">{study.impact}</p>
+      {/* CASE STUDIES – PRAKAT STYLE WITH IMAGES */}
+      <section className="prakat-case-section">
+        <div className="prakat-case-grid">
+          {caseStudies.map((study, index) => (
+            <div className="prakat-case-card" key={index}>
+              
+              {/* IMAGE */}
+              <div className="case-img-wrapper">
+                <img src={study.image} alt={study.title} />
               </div>
 
-              
+              <span className="case-domain">{study.domain}</span>
+
+              <h3>{study.title}</h3>
+              <p className="case-desc">{study.description}</p>
+
+              <div className="case-tech">
+                {study.techStack.map((tech, i) => (
+                  <span key={i}>{tech}</span>
+                ))}
+              </div>
+
+              <button className="case-btn">View Case Study →</button>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
 
+      <Footer />
     </div>
   );
 }

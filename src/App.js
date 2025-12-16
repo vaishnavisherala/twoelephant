@@ -75,6 +75,8 @@ export default function App() {
      
     </div>
   </details>
+          <Link to="/case-studies">Case Studies</Link>
+
             <Link to="/careers" onClick={() => setMenuOpen(false)}>Career</Link>
             {/* <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
             <Link to="/register" onClick={() => setMenuOpen(false)}>Register</Link> */}

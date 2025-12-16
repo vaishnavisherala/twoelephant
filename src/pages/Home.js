@@ -6,9 +6,11 @@ import {
   Award,
   Target,
   Lightbulb,
-  ArrowRight
+  ArrowRight,
+  Link
 } from "lucide-react";
 
+import { useNavigate } from "react-router-dom";
 import side from "../images/side.jpg";
 import image1 from "../images/casestudy.jpeg";
 import image from "../images/i.png";
@@ -16,7 +18,7 @@ import casestudyImg from "../images/casestudy.jpeg";
 import Footer from "./Footer";
 
 export default function Home() {
-
+ const navigation= useNavigate();
   /* ===================== SLIDES WITH BACKGROUND IMAGES ===================== */
   const slides = [
     {
@@ -145,7 +147,7 @@ export default function Home() {
               <div className="hero-buttons">
                 <button
                   className="btn hero-btn primary"
-                  onClick={() => scrollToSection("services")}
+                  onClick={() => navigation("/services")}
                 >
                   Learn More <ChevronRight className="icon" />
                 </button>
@@ -211,10 +213,9 @@ export default function Home() {
                 Modernizing legacy systems to improve scalability, security,
                 and operational efficiency.
               </p>
-
               <button
                 className="btn case-link-btn"
-                onClick={() => (window.location.href = "/case-studies")}
+                onClick={() =>navigation("/case-studies")}
               >
                 View Case Studies <ArrowRight className="icon" />
               </button>

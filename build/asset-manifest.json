@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/twoelephant/static/css/main.96817089.css",
-    "main.js": "/twoelephant/static/js/main.3dd42545.js",
+    "main.css": "/twoelephant/static/css/main.d2e65b27.css",
+    "main.js": "/twoelephant/static/js/main.68305599.js",
     "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
     "static/media/image1.png": "/twoelephant/static/media/image1.7db107a0da2b29eb65ce.png",
     "static/media/image.png": "/twoelephant/static/media/image.2a83765b74c51a1a0e2b.png",
@@ -21,11 +21,11 @@
     "static/media/team2.jpeg": "/twoelephant/static/media/team2.aa1a78b1a46e4e4b2613.jpeg",
     "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
     "index.html": "/twoelephant/index.html",
-    "main.96817089.css.map": "/twoelephant/static/css/main.96817089.css.map",
-    "main.3dd42545.js.map": "/twoelephant/static/js/main.3dd42545.js.map"
+    "main.d2e65b27.css.map": "/twoelephant/static/css/main.d2e65b27.css.map",
+    "main.68305599.js.map": "/twoelephant/static/js/main.68305599.js.map"
   },
   "entrypoints": [
-    "static/css/main.96817089.css",
-    "static/js/main.3dd42545.js"
+    "static/css/main.d2e65b27.css",
+    "static/js/main.68305599.js"
   ]
 }

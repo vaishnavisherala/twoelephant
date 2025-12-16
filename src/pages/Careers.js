@@ -5,6 +5,7 @@ import team2 from "../images/team2.jpeg";
 import team3 from "../images/team3.jpeg";
 import team4 from "../images/team4.jpeg";
 import "../pages/Careers.css";
+import Footer from "./Footer";
 
 export default function Careers() {
   return (
@@ -70,54 +71,7 @@ export default function Careers() {
         </div>
       </section>
 
-      
-<footer className="footer">
-        <div className="footer-container">
-          <div className="footer-column footer-brand">
-            <img
-              src="/assets/logo.png"
-              alt="Two Elephants"
-              className="footer-logo-img"
-            />
-            <h3 className="footer-logo">Two Elephants</h3>
-            <p className="footer-desc">
-              Advanced digital engineering solutions and IT services for
-              enterprises worldwide.
-            </p>
-          </div>
-
-          <div className="footer-column">
-            <h4 className="footer-column-title">Company</h4>
-            <ul className="footer-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about-us">About Us</a></li>
-              <li><a href="/career">Careers</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4 className="footer-column-title">Our Services</h4>
-            <ul className="footer-menu">
-              <li><a href="/services">Digital Transformation</a></li>
-              <li><a href="/services">AI Solutions</a></li>
-              <li><a href="/services">Cybersecurity</a></li>
-              <li><a href="/services">Product Engineering</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4 className="footer-column-title">Contact Us</h4>
-            <p className="footer-contact"><br />Your Office Address</p>
-            <p className="footer-contact"><br />info@twoelephants.org</p>
-            <p className="footer-contact"><br />www.twoelephants.org</p>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <p>© 2025 Two Elephants. All rights reserved.</p>
-        </div>
-      </footer>
+<Footer/>
     </div>
   );
 }
