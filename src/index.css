@@ -430,7 +430,7 @@ button {
 /* Footer logo image */
 .footer-logo-img {
   height: 70px;
-  padding-left: 90px;
+  padding-left: 150px;
   margin-bottom: 14px;
   object-fit: contain;
   display: block;
@@ -446,7 +446,7 @@ button {
   color: white;
   margin: 0 0 15px 0;
   letter-spacing: 1px;
-  padding-left: 30px;
+  padding-left: 90px;
 }
 
 .footer-desc {
@@ -2659,6 +2659,18 @@ button {
   color: white;
   
 }
+@media (max-width: 480px) {
+  .hero-btn.primary {
+    width: 100%;                /* Full width for thumb reach */
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  
+}
+
 
 .hero-btn.secondary {
   background: transparent;

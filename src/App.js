@@ -47,13 +47,8 @@ export default function App() {
           <Link to="/careers">Career</Link>
           {/* <Link to="/login">Login</Link> */}
           {/* <Link to="/register">Register</Link> */}
-          <button className="nav-contact-btn" onClick={() => window.location.href = '/contact'}>
-  Contact Us
-</button>
+          <Link className="nav-contact-btn" to="/contact">Contact Us</Link>
 
-
-
-          
       
         </div>
 
