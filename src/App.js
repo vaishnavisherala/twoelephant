@@ -49,7 +49,6 @@ export default function App() {
           {/* <Link to="/register">Register</Link> */}
           <Link className="nav-contact-btn" to="/contact">Contact Us</Link>
 
-      
         </div>
 
         {/* Hamburger Button */}
@@ -80,10 +79,7 @@ export default function App() {
             {/* <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
             <Link to="/register" onClick={() => setMenuOpen(false)}>Register</Link> */}
             <Link to="/about-us" onClick={() => setMenuOpen(false)}>About Us</Link> 
-            <button className="button" onClick={() => window.location.href = '/contact'}>
-  Contact Us
-</button>
-
+            <Link className="nav-contact-btn" to="/contact"> Contact Us</Link>
 
           </div>
         )}

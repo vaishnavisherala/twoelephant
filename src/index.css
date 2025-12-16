@@ -80,10 +80,6 @@ h1{font-size:40px;margin:12px 0;align-content: center;}
   padding: 12px 22px;
 }
 
-.hero-btn .icon {
-  width: 22px;
-  height: 22px;
-}
 
 /* VALUES SECTION - Circular Infographic */
 .values-section {
@@ -376,9 +372,7 @@ button {
 }
 
 /* Button centered */
-.hero-btn {
-  margin-top: 25px;
-}
+
 
 
 
@@ -425,6 +419,30 @@ button {
 
 .footer-brand {
   grid-column: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-column.footer-brand {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-logo-img {
+    /* width: 60px; */
+    margin-bottom: 10px;
+    padding-right: 150px;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+    padding-right: 80px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 /* Footer logo image */
@@ -491,6 +509,7 @@ button {
   margin: 0 0 15px 0;
   color: #9ca3af;
 }
+
 
 .footer-contact strong {
   color: white;
@@ -2368,6 +2387,15 @@ button {
   transition: 0.2s ease;
 }
 
+@media (max-width: 790px) {
+  .nav-contact-btn {
+  
+    font-size: 11px;
+    width: 100px;
+    margin-left: 0px;
+  }
+}
+
 .nav-contact-btn:hover {
   background: var(--orange-dark);
 }
@@ -2647,28 +2675,24 @@ button {
 =========================================================*/
 
 /* Hero Buttons */
-.hero-buttons {
-  /* display: flex; */
-  gap: 16px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
 
-.hero-btn.primary {
-  background: var(--accent);
-  color: white;
-  
-}
-@media (max-width: 480px) {
-  .hero-btn.primary {
-    width: 100%;                /* Full width for thumb reach */
-    justify-content: center;
-    padding: 12px 16px;
-    font-size: 14px;
-    border-radius: 30px;
+@media (max-width: 768px) {
+  .hero-btn {
+    font-size: 15px;
+    padding: 10px 18px;
+    gap: 5px;
+    margin-top: 14px;
   }
+}
 
-  
+@media (max-width: 768px) {
+  .hero-btn.primary {
+    font-size: 15px;
+    padding: 10px 18px;
+    gap: 5px;
+    width: 150px;
+    margin-top: 14px;
+  }
 }
 
 
@@ -3434,8 +3458,6 @@ button {
     gap: 12px;
   }
 
-  .hero-btn,
-  .hero-btn.primary,
   .hero-btn.secondary {
     padding: 10px 16px;
     font-size: 14px;
