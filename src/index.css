@@ -845,7 +845,7 @@ button {
 }
 
 .service-detail-btn {
-  background: #3b82f6;
+  background: #F4A029;
   color: white;
   padding: 14px 32px;
   border: none;
@@ -860,7 +860,7 @@ button {
 }
 
 .service-detail-btn:hover {
-  background: #2563eb;
+  background: #F4A029;
   transform: translateX(5px);
 }
 

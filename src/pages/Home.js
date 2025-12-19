@@ -98,7 +98,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -127,10 +127,7 @@ export default function Home() {
         ref={heroRef}
         className="hero-slider-section"
         style={{
-          backgroundImage: `linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.55)
-          ), url(${slides[currentSlide].bg})`,
+          backgroundImage: ` url(${slides[currentSlide].bg})`,
           backgroundSize: "cover",
           backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
           transition: "background-image 1s ease-in-out",

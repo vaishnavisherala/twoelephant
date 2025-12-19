@@ -9,7 +9,7 @@ import {
   Share2,
   LineChart,
 } from "lucide-react";
-
+ import { useNavigate } from "react-router-dom";
 import heroImg from "../images/side.jpg";
 import casetudy1 from "../images/casestudy.jpeg";
 import producteng from "../images/productengg.jpg";
@@ -18,6 +18,7 @@ import dataAI from "../images/dataAI.png";
 import ommimarket from "../images/ommimarket.png";
 import Footer from "./Footer";
 export default function Services() {
+  const navigation= useNavigate();
   const services = [
     {
         image: casetudy1,
@@ -91,7 +92,7 @@ export default function Services() {
               <h2 className="service-detail-title">{service.title}</h2>
               <p className="service-detail-description">{service.description}</p>
               <p className="service-detail-sub">{service.sub}</p>
-              <button className="service-detail-btn">
+              <button onClick={() => navigation("/case-studies")} className="service-detail-btn">
                 Explore Service <span>→</span>
               </button>
             </div>
