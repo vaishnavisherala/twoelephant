@@ -66,29 +66,31 @@ export default function AboutUs() {
 
         {/* VISION BOX */}
         <div className="vision-box">
-          <h2>Our Vision</h2>
-          <p>
-            Empowering Solapur and India’s tier-2 cities to become strong tech ecosystems.
-          </p>
+    <h2>Our Vision</h2>
+    <p>
+      To leverage Artificial Intelligence and emerging technologies to empower
+      organizations and communities with intelligent, ethical, and scalable digital solutions.
+    </p>
 
-          <ul>
-            <li>Enhancing student innovation & employability</li>
-            <li>Strengthening academia–industry partnerships</li>
-            <li>Building a sustainable tech future for the region</li>
-          </ul>
-        </div>
+    <ul>
+      <li>Driving AI-led innovation across education, healthcare, and enterprises</li>
+      <li>Enabling data-driven decision-making through intelligent systems</li>
+      <li>Building future-ready digital ecosystems for sustainable growth</li>
+    </ul>
+  </div>
+
 
         {/* MISSION BOX */}
         <div className="mission-box">
-          <h2>Our Mission</h2>
-          <ul>
-            <li> Deliver reliable & scalable IT solutions</li>
-            <li> Support clients with care & long-term commitment</li>
-            <li> Maintain transparency in every partnership</li>
-            <li> Build trust-driven business relationships</li>
-            <li> Create value using innovation & research</li>
-          </ul>
-        </div>
+    <h2>Our Mission</h2>
+    <ul>
+      <li>Design and deliver AI & ML-powered solutions that solve real-world problems</li>
+      <li>Build secure, scalable, and ethical AI systems with transparency</li>
+      <li>Help businesses unlock insights through data, analytics, and automation</li>
+      <li>Support long-term digital transformation with innovation and care</li>
+      <li>Create measurable impact using technology-driven intelligence</li>
+    </ul>
+  </div>
       </section>
       <Footer/>
 

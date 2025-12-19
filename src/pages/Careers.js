@@ -29,9 +29,7 @@ export default function Careers() {
             <a href="#openings" className="career-btn primary">
               View Open Roles
             </a>
-            <a href="/contact" className="career-btn secondary">
-              Contact HR
-            </a>
+           
           </div>
         </div>
 
@@ -48,28 +46,38 @@ export default function Careers() {
       </section>
 
       {/* WHY JOIN */}
-      <section className="career-why">
-        <h2>Why Work With Us?</h2>
-        <p>
-          At Two Elephants, we don’t just hire employees —  
-          we build leaders, innovators, and long-term partners.
-        </p>
+      <section id="openings" className="current-openings">
+  <h2 className="section-title">Current Openings</h2>
+  <p className="section-subtitle">
+    Join our growing team and work on cutting-edge AI & technology solutions
+  </p>
 
-        <div className="career-values">
-          <div className="career-card">
-            <h4>🚀 Career Growth</h4>
-            <p>Structured learning, mentorship & real projects.</p>
-          </div>
-          <div className="career-card">
-            <h4>🤝 Supportive Culture</h4>
-            <p>People-first culture with strong team bonding.</p>
-          </div>
-          <div className="career-card">
-            <h4>💼 Real Impact</h4>
-            <p>Your work directly impacts clients & communities.</p>
-          </div>
-        </div>
-      </section>
+  <div className="openings-grid">
+    <div className="opening-card">
+      <h3>Python Developer</h3>
+      <p className="opening-location">📍 Solapur / Remote</p>
+      <ul className="opening-points">
+        <li>Strong knowledge of Python & backend development</li>
+        <li>Experience with Django / Flask / FastAPI</li>
+        <li>Database knowledge (PostgreSQL / MySQL)</li>
+        <li>REST API development & integrations</li>
+      </ul>
+    </div>
+
+    <div className="opening-card">
+      <h3>AI / ML Intern</h3>
+      <p className="opening-location">📍 On-site / Internship</p>
+      <ul className="opening-points">
+        <li>Basic understanding of Python & ML fundamentals</li>
+        <li>Passion for AI, data & problem-solving</li>
+        <li>Hands-on learning with real-world projects</li>
+        <li>Mentorship from experienced engineers</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 <Footer/>
     </div>
