@@ -170,8 +170,7 @@ export default function Home() {
       <section className="values-wheel-section">
         <div className="values-intro">
           <p className="values-intro-text">
-            Two Elephants is built on the values that elephants naturally represent — unmatched strength, deep loyalty, emotional intelligence, and a remarkable memory. These qualities define the way we work with our clients: strong enough to tackle any challenge, caring enough to understand your needs, and honest enough to always stand by our word.
-          </p>
+Two Elephants is deploying a future-ready technology organization built upon seasoned leadership, proven global engineering practices, and a deeply committed regional talent base. Our overarching objective is the development of a globally competitive IT delivery framework emanating from Solapur that consistently maximizes client value while championing decentralized and inclusive innovation.          </p>
         </div>
 
         <div className="wheel-container">

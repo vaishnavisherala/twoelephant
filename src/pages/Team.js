@@ -14,41 +14,36 @@ export default function Team() {
   const topLeaders = [
     {
       name: "Prashant Rathi",
-      role: "Founder & CEO",
+      role: "Co-Founder & CEO,Two Elephants",
       img: pt,
-      bio: "Visionary leader focused on innovation, customer trust, and technological excellence.",
-      social: "@prashant.rathi",
+      bio: "Holds an MBA from Sydney and brings strong cross-market business acumen with execution rigor. He contributes to the legacy of Pushpa Textile, a Solapur-based manufacturer with over 50 years of experience",
     },
     {
       name: "Anuradha Biswas",
-      role: "Technical Lead",
+      role: "Chief Executive Officer & Founder,Prakat Solutions",
       img: Au,
-      bio: "Expert in full-stack engineering, cloud architecture, and high-performance systems.",
-      social: "@anuradha.b",
+      bio: "A mentor and catalyst with over two decades of leadership experience. Has architected and scaled innovative businesses and global delivery units for Infosys, Aztec, CyberCash, VeriFone, and CA Technologies.",
     },
   ];
 
   const otherLeaders = [
     {
       name: "Abhik Biswas",
-      role: "Co-Founder & Director",
+      role: "Chief Technology Officer & Co-Founder, Prakat Solutions",
       img: Abhi,
-      bio: "Strategic thinker dedicated to building strong teams and long-term business success.",
-      social: "@abhik.b",
+      bio: "Over three decades of engineering and platform leadership experience. Former senior technology leader at TCS, VeriFone, CA, Cisco, and other global enterprises, driving large-scale systems.",
     },
     {
       name: "Sapna Rathi",
-      role: "Technical Lead",
+      role: "Co-Founder, Two Elephants",
       img: Sapna,
-      bio: "Expert in full-stack engineering, cloud architecture, and high-performance systems.",
-      social: "@sapna.rathi",
+      bio: "Leads operational governance and process architecture. Specializes in implementing IT-enabled ISO frameworks to build scalable and compliant operating models.",
     },
     {
       name: "Pankaj Rathi",
       role: "Technical Lead",
       img: pankaj,
-      bio: "Expert in full-stack engineering, cloud architecture, and high-performance systems.",
-      social: "@pankaj.rathi",
+      bio: "He manages our Overseas Operations. He graduated from VJTI Mumbai as Gold Medalist in Textile Engineering & completed Masters degree in Textiles, NY. Currently based in Houstan Texas and leading a Global Shipping Business.",
     },
   ];
 

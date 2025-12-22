@@ -6,7 +6,7 @@ import team3 from "../images/team3.jpeg";
 import team4 from "../images/team4.jpeg";
 import "../pages/Careers.css";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 export default function Careers() {
   return (
     <div className="career-page">
@@ -49,7 +49,9 @@ export default function Careers() {
       <section id="openings" className="current-openings">
   <h2 className="section-title">Current Openings</h2>
   <p className="section-subtitle">
-    Join our growing team and work on cutting-edge AI & technology solutions
+    Join our growing team and work on cutting-edge AI & technology solutions<br/>
+    Send your resume to <Link to="mailto:support@twoelephants.org">  support@twoelephants.org</Link>
+  
   </p>
 
   <div className="openings-grid">

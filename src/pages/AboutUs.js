@@ -26,17 +26,18 @@ export default function AboutUs() {
         
           <p>
              Two Elephants is built on core values that elephants naturally represent —
-            unmatched strength, deep loyalty, emotional intelligence, and a remarkable memory.
+            unmatched strength, deep loyalty, emotional intelligence, a remarkable memory.
+             We believe in long-term partnerships and delivering  
+            value-driven results across every project we handle.
+       
           </p>
           <p>
-            Since our beginning, we have focused on offering reliable technology solutions  
-            that empower businesses to scale with trust and innovation.  
+           Built on years of proven execution across manufacturing, technology, and global IT delivery, Two Elephants brings together an experienced leadership team to establish a scalable IT organization in Solapur, Maharashtra. 
           </p>
 
           <p>
-            We believe in long-term partnerships, transparent processes, and delivering  
-            value-driven results across every project we handle.
-          </p>
+            With a clear mandate to build a 500-member software engineering team over the next three years, we aim to harness regional talent to deliver high-value technology services to national and international clients, while positioning Solapur as an emerging technology hub.
+              </p>
         </div>
 
         {/* RIGHT SIDE - IMAGE */}

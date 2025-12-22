@@ -53,11 +53,11 @@ export default function Services() {
     },
     {
        image: ommimarket,
-      title: "Omnichannel Marketing & Engagement",
+      title: "Cognitive & AI-Enabled Solutions",
       description:
-        "Engagement strategies connecting communities, partners, and stakeholders effectively.",
+        "Deployment of advanced algorithms for process automation",
       sub:
-        "Digital campaigns, analytics insights, and multi-platform engagement tools.",
+        "Sophisticated predictive analytics, and implementation of intelligent workflows across diverse industry verticals.",
     },
     
   ];

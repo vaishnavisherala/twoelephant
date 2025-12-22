@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/twoelephant/static/css/main.35653a3f.css",
+    "main.js": "/twoelephant/static/js/main.1ba29c5d.js",
+    "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
+    "static/media/image1.png": "/twoelephant/static/media/image1.7db107a0da2b29eb65ce.png",
+    "static/media/image.png": "/twoelephant/static/media/image.2a83765b74c51a1a0e2b.png",
+    "static/media/Abhi.jpeg": "/twoelephant/static/media/Abhi.a48c8524bcfff06d137c.jpeg",
+    "static/media/Au.jpeg": "/twoelephant/static/media/Au.d2bdb1135f72b25d3610.jpeg",
+    "static/media/dataAI.png": "/twoelephant/static/media/dataAI.ee4d0357d6da16a8aafc.png",
+    "static/media/productengg.jpg": "/twoelephant/static/media/productengg.516ebb2ce7c9a01474af.jpg",
+    "static/media/casestudy.jpeg": "/twoelephant/static/media/casestudy.ace8cde195afb7848e8e.jpeg",
+    "static/media/cyber.jpg": "/twoelephant/static/media/cyber.6dbedecadc0fe330dbe1.jpg",
+    "static/media/e.jpeg": "/twoelephant/static/media/e.a733f5b8bb6aae566954.jpeg",
+    "static/media/ommimarket.png": "/twoelephant/static/media/ommimarket.4ca72dcc788b2715f216.png",
+    "static/media/edu.jpeg": "/twoelephant/static/media/edu.c7e49be59c5152e79c86.jpeg",
+    "static/media/pt.jpeg": "/twoelephant/static/media/pt.75a11e46714adf33fc09.jpeg",
+    "static/media/i.png": "/twoelephant/static/media/i.7ca1edd92f1b8195cc35.png",
+    "static/media/Sapna.jpeg": "/twoelephant/static/media/Sapna.a23d7b5842797737908e.jpeg",
+    "static/media/pankaj.jpeg": "/twoelephant/static/media/pankaj.287db64644447f702ed4.jpeg",
+    "static/media/hel.jpeg": "/twoelephant/static/media/hel.438615b1adbd2cc9c7d7.jpeg",
+    "static/media/manufacturing.jpg": "/twoelephant/static/media/manufacturing.477b0cfcd9f146b75d77.jpg",
+    "static/media/retail.jpg": "/twoelephant/static/media/retail.0966c3757e0ce6f78a58.jpg",
+    "static/media/team2.jpeg": "/twoelephant/static/media/team2.aa1a78b1a46e4e4b2613.jpeg",
+    "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
+    "index.html": "/twoelephant/index.html",
+    "main.35653a3f.css.map": "/twoelephant/static/css/main.35653a3f.css.map",
+    "main.1ba29c5d.js.map": "/twoelephant/static/js/main.1ba29c5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35653a3f.css",
+    "static/js/main.1ba29c5d.js"
+  ]
+}

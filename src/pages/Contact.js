@@ -77,8 +77,8 @@ export default function Contact() {
 
             <p><strong>📍 Address:</strong></p>
             <p>
-              India: 155/4/3 Gandhi Nagar Akkalkot Road<br />
-              Solapur – 413005
+              India: 30/70, Vivekanand House, Padma Nagar, <br/>Akkalkot Road, Solapur 
+              - 413005
             </p>
             <p>
               USA: 2903 Rutherford Place Ct, Katy<br />
