@@ -1,11 +1,18 @@
 import React from "react";
 
+import heroImg from "../images/side.jpg";
+import Footer from "./Footer";
 export default function AboutUs() {
   return (
     <div className="about-page">
 
       {/* HEADER TITLE */}
-      <section className="about-header">
+      <section style={{
+    backgroundImage: `url(${heroImg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}  className="about-header">
         <h1 className="about-title">About Two Elephants</h1>
         <p className="about-subtitle">
           Strength • Care • Honesty — The Promise We Stand On
@@ -13,64 +20,81 @@ export default function AboutUs() {
       </section>
 
       {/* INTRO SECTION */}
-      <section className="about-section">
-        <div className="about-container">
-
-          <div className="about-text">
-            <h2>Who We Are</h2>
-            <p>
-              Two Elephants is built on the values that elephants naturally
-              represent — unmatched strength, deep loyalty, emotional
-              intelligence, and a remarkable memory. These qualities define the
-              way we work with our clients: strong enough to tackle any challenge,
-              caring enough to understand your needs, and honest enough to always
-              stand by our word.
-            </p>
-            <p>
-              Just like the mother-and-calf symbol in our logo, we guide and
-              support every business we work with, helping them grow, evolve,
-              and thrive with confidence.
-            </p>
-          </div>
-
-          <div className="about-image-box">
-            🐘🐘
-          </div>
-        </div>
-      </section>
-
-      {/* VISION SECTION */}
-      <section className="vision-section">
-        <div className="vision-container">
-          <h2 className="vision-title">Our Vision</h2>
-
-          <p className="vision-text">
-            To become a trusted global partner recognized for empowering
-            businesses through strategic guidance, reliable support, and a
-            culture rooted in integrity. We envision a world where every business
-            — large or small — has the strength and clarity to grow sustainably
-            and ethically.
+      <section className="about-hero-section">
+        {/* LEFT SIDE - TEXT */}
+        <div className="hero-left">
+        
+          <p>
+             Two Elephants is built on core values that elephants naturally represent —
+            unmatched strength, deep loyalty, emotional intelligence, a remarkable memory.
+             We believe in long-term partnerships and delivering  
+            value-driven results across every project we handle.
+       
           </p>
+          <p>
+           Built on years of proven execution across manufacturing, technology, and global IT delivery, Two Elephants brings together an experienced leadership team to establish a scalable IT organization in Solapur, Maharashtra. 
+          </p>
+
+          <p>
+            With a clear mandate to build a 500-member software engineering team over the next three years, we aim to harness regional talent to deliver high-value technology services to national and international clients, while positioning Solapur as an emerging technology hub.
+              </p>
         </div>
+
+        {/* RIGHT SIDE - IMAGE */}
+       
       </section>
 
-      {/* MISSION SECTION */}
-      <section className="mission-section">
-        <div className="mission-container">
-          <h2 className="mission-title">Our Mission</h2>
+      {/* ===============================
+          ABOUT US INFORMATION BLOCK
+      =============================== */}
+      <section className="about-info-section">
 
-          <ul className="mission-list">
-            <li>✔ Provide strong, reliable, and efficient business solutions.</li>
-            <li>✔ Support our clients with empathy, care, and long-term commitment.</li>
-            <li>✔ Maintain absolute transparency and honesty in every partnership.</li>
-            <li>✔ Deliver growth-driven strategies backed by real research and insight.</li>
-            <li>✔ Build lasting relationships based on trust, respect, and integrity.</li>
-          </ul>
-        </div>
+        {/* LEFT VERTICAL TEXT */}
+       
+
+        {/* WHITE CARD RIGHT CONTENT */}
+         {/* <div className="intro-right">
+          <img src={heroImg} alt="About" />
+        </div> */}
       </section>
 
-      {/* BRAND VALUES */}
-      
+
+
+      {/* ===============================
+          VISION + MISSION (SIDE-BY-SIDE)
+      =============================== */}
+      <section className="vision-mission-wrapper">
+
+        {/* VISION BOX */}
+        <div className="vision-box">
+    <h2>Our Vision</h2>
+    <p>
+      To leverage Artificial Intelligence and emerging technologies to empower
+      organizations and communities with intelligent, ethical, and scalable digital solutions.
+    </p>
+
+    <ul>
+      <li>Driving AI-led innovation across education, healthcare, and enterprises</li>
+      <li>Enabling data-driven decision-making through intelligent systems</li>
+      <li>Building future-ready digital ecosystems for sustainable growth</li>
+    </ul>
+  </div>
+
+
+        {/* MISSION BOX */}
+        <div className="mission-box">
+    <h2>Our Mission</h2>
+    <ul>
+      <li>Design and deliver AI & ML-powered solutions that solve real-world problems</li>
+      <li>Build secure, scalable, and ethical AI systems with transparency</li>
+      <li>Help businesses unlock insights through data, analytics, and automation</li>
+      <li>Support long-term digital transformation with innovation and care</li>
+      <li>Create measurable impact using technology-driven intelligence</li>
+    </ul>
+  </div>
+      </section>
+      <Footer/>
+
     </div>
   );
 }

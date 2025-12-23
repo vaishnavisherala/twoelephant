@@ -1,98 +1,228 @@
-import React from "react";
-import { ChevronRight } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import {
+  ChevronRight,
+  Users,
+  Scale,
+  Award,
+  Target,
+  Lightbulb,
+  ArrowRight,
+  Link
+} from "lucide-react";
+
+import { useNavigate } from "react-router-dom";
+import side from "../images/side.jpg";
+import image1 from "../images/casestudy.jpeg";
+import image from "../images/i.png";
+import casestudyImg from "../images/casestudy.jpeg";
+import Footer from "./Footer";
 
 export default function Home() {
+ const navigation= useNavigate();
+  /* ===================== SLIDES WITH BACKGROUND IMAGES ===================== */
+  const slides = [
+    {
+      title: "Digital Engineering Solutions",
+      subtitle: "Advanced IT Services & Software Development",
+      description:
+        "Transforming businesses with innovative technology solutions. From custom software to cloud infrastructure, we deliver excellence that drives growth.",
+      bg: image,
+    },
+    {
+      title: "Empowering Businesses",
+      subtitle: "Technology • Innovation • Trust",
+      description:
+        "We deliver future-ready IT solutions that help companies grow smarter, faster, and stronger. Your trusted partner in digital transformation.",
+      bg: side,
+    },
+    {
+      title: "Your Trusted Technology Partner",
+      subtitle: "Strategy • Execution • Support",
+      description:
+        "From idea to deployment — we guide you with clarity, strength, and transparency. Building strong foundations for your business success.",
+      bg: image1,
+    },
+  ];
+
+  /* ===================== CORE VALUES ===================== */
+  const segments = [
+    {
+      title: "TEAMWORK",
+      icon: <Users size={32} strokeWidth={1.5} />,
+      text: "Collaboration that strengthens our ability to succeed.",
+      x: -219,
+      y: -220,
+    },
+    {
+      title: "HONESTY",
+      icon: <Scale size={32} strokeWidth={1.5} />,
+      text: "Transparency and ethics guide every decision we make.",
+      x: -10,
+      y: -270,
+    },
+    {
+      title: "QUALITY",
+      icon: <Award size={32} strokeWidth={1.5} />,
+      text: "World-class execution with consistency and precision.",
+      x: 220,
+      y: -220,
+    },
+    {
+      title: "CUSTOMERS",
+      icon: <Users size={32} strokeWidth={1.5} />,
+      text: "Customer success is the core of our purpose.",
+      x: 220,
+      y: 30,
+    },
+    {
+      title: "GOALS",
+      icon: <Target size={32} strokeWidth={1.5} />,
+      text: "Clear objectives aligned with business growth.",
+      x: 0,
+      y: 140,
+    },
+    {
+      title: "INNOVATION",
+      icon: <Lightbulb size={32} strokeWidth={1.5} />,
+      text: "Ideas that reshape industries and possibilities.",
+      x: -220,
+      y: 30,
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
+  const heroRef = useRef(null);
+
+  /* ===================== AUTO SLIDER ===================== */
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 9000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  /* ===================== MOUSE PARALLAX ===================== */
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({
+        x: (e.clientX / window.innerWidth) * 100,
+        y: (e.clientY / window.innerHeight) * 100,
+      });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div>
+    <div className="home-page">
 
-      {/* HERO SECTION */}
-      <section id="home" className="hero-section">
-  <div className="hero-inner">
+      {/* ===================== HERO SLIDER ===================== */}
+      <section
+        id="home"
+        ref={heroRef}
+        className="hero-slider-section"
+        style={{
+          backgroundImage: ` url(${slides[currentSlide].bg})`,
+          backgroundSize: "cover",
+          backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
+          transition: "background-image 1s ease-in-out",
+        }}
+      >
+        <div className="hero-slider-container">
+          <div className="hero-content-wrapper">
 
-    <h1 className="hero-title">TWO ELEPHANTS</h1>
+            <div className="hero-text-content">
+              <h1 className="hero-title">{slides[currentSlide].title}</h1>
+              <p className="hero-subtitle">{slides[currentSlide].subtitle}</p>
+              <p className="hero-description">{slides[currentSlide].description}</p>
 
-    <p className="hero-subtitle">STRENGTH • CARE • HONESTY</p>
+              <div className="hero-buttons">
+                <button
+                  className="btn hero-btn primary"
+                  onClick={() => navigation("/services")}
+                >
+                  Learn More <ChevronRight className="icon" />
+                </button>
+              </div>
+            </div>
 
-    <p className="hero-description">
-      Building strong foundations for your business with integrity,
-      reliability, and an unwavering commitment to excellence.
-    </p>
+          </div>
 
-    <button
-      onClick={() => scrollToSection("contact")}
-      className="btn hero-btn"
-    >
-      Get Started <ChevronRight className="icon" />
-    </button>
+          {/* SLIDER DOTS */}
+          <div className="slider-dots">
+            {slides.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${index === currentSlide ? "active-dot" : ""}`}
+                onClick={() => setCurrentSlide(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-  </div>
-</section>
+      {/* ===================== CORE VALUES ===================== */}
+      <section className="values-wheel-section">
+        <div className="values-intro">
+          <p className="values-intro-text">
+Two Elephants is deploying a future-ready technology organization built upon seasoned leadership, proven global engineering practices, and a deeply committed regional talent base. Our overarching objective is the development of a globally competitive IT delivery framework emanating from Solapur that consistently maximizes client value while championing decentralized and inclusive innovation.          </p>
+        </div>
 
+        <div className="wheel-container">
+          <div className="core-values-center-text">CORE VALUES</div>
 
-      {/* CORE VALUES */}
-      <section className="values-section">
-        <h2 className="values-title">Our Core Values</h2>
-
-        <div className="values-container">
-
-          {[
-            {
-              // icon: "💪",
-              title: "STRENGTH",
-              description:
-                "We deliver robust solutions and unwavering support. Like elephants, we carry the heaviest loads with confidence and capability.",
-            },
-            {
-              // icon: "❤️",
-              title: "CARE",
-              description:
-                "Every client matters. We nurture relationships with empathy, attention, and a dedication to your long-term success.",
-            },
-            {
-              // icon: "🤝",
-              title: "HONESTY",
-              description:
-                "Integrity guides everything we do. We believe in transparency, clear communication, and ethical practices.",
-            },
-          ].map((value, index) => (
-            <div key={index} className="value-card">
-              <div className="value-icon">{value.icon}</div>
-              <h3 className="value-title">{value.title}</h3>
-              <p className="value-description">{value.description}</p>
+          {segments.map((s, i) => (
+            <div
+              key={i}
+              className="outside-text"
+              style={{
+                left: `calc(50% + ${s.x}px)`,
+                top: `calc(50% + ${s.y}px)`,
+              }}
+            >
+              <div className="value-icon-circle">{s.icon}</div>
+              <h4>{s.title}</h4>
+              <p>{s.text}</p>
             </div>
           ))}
-
         </div>
       </section>
 
-          <section id="contact" className="contact-section">
-        <h2 style={{color:'white'}}>Ready to Work Together?</h2>
-        <p style={{color:'white'}}>
-          Let’s build something strong together. Contact us today to discover
-          how we can elevate your business.
-        </p>
-        <button className="btn contact-btn">Contact Us Today</button>
+      {/* ===================== CASE STUDY ===================== */}
+      <section className="case-studies-preview-section">
+        <div className="case-preview-container">
+          <div className="case-preview-grid">
+
+            <div className="case-preview-image">
+              <img src={casestudyImg} alt="Case Study" />
+            </div>
+
+            <div className="case-preview-content">
+              <span className="case-label">CASE STUDY</span>
+              <h3>Digital Transformation Success</h3>
+              <p>
+                Modernizing legacy systems to improve scalability, security,
+                and operational efficiency.
+              </p>
+              <button
+                className="btn case-link-btn"
+                onClick={() =>navigation("/case-studies")}
+              >
+                View Case Studies <ArrowRight className="icon" />
+              </button>
+            </div>
+
+          </div>
+        </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="footer">
-        <p>© 2025 Two Elephants. All rights reserved.</p>
-
-        <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">LinkedIn</a>
-        </div>
-
-        <p className="footer-tag">One Promise: Strength • Care • Honesty</p>
-      </footer>
+      {/* ===================== FOOTER ===================== */}
+      <Footer />
     </div>
   );
 }
