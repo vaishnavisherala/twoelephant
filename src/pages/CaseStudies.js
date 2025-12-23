@@ -46,7 +46,7 @@ export default function CaseStudies() {
           position: "relative",
         }}
       >
-        <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)" }} />
+        <div style={{ position: "absolute", inset: 0 }} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
           <h1 style={{ fontSize: 46, fontWeight: 700 }}>Case Studies</h1>
           <p style={{ fontSize: 20, maxWidth: 720, margin: "0 auto" }}>

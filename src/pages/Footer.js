@@ -40,7 +40,9 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-column-title">Contact Us</h4>
             <p className="footer-contact"><br />India: 30/70, Vivekanand House, Padma Nagar, Akkalkot Road, Solapur -413005<br />
-              Solapur – 413005</p>
+              Solapur – 413005<br/><br/> USA: 2903 Rutherford Place Ct, Katy<br />
+              Houston, TX – 77494</p><br/>
+             
             <p className="footer-contact"><br />info@twoelephants.org</p>
             <p className="footer-contact"><br />www.twoelephants.org</p>
           </div>

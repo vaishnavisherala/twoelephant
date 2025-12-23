@@ -63,11 +63,11 @@ export default function Team() {
           backgroundImage: `url(${require("../images/side.jpg")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          padding: "120px 20px",
+          padding: "70px 0px",
           position: "relative",
         }}
       >
-        <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)" }} />
+        <div style={{ position: "absolute", inset: 0}} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
           <h1 style={{ fontSize: 46, fontWeight: 700 }}>Leadership & Team</h1>
           <p style={{ fontSize: 20, maxWidth: 720, margin: "0 auto" }}>
