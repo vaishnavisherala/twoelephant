@@ -169,6 +169,7 @@ function CompactCard({ leader, index, onImageClick, avatarSize }) {
         <img
           src={leader.img}
           alt={leader.name}
+          className="team-avatar"
           style={{
             width: avatarSize,
             height: avatarSize,

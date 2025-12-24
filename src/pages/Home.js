@@ -27,6 +27,8 @@ export default function Home() {
       description:
         "Transforming businesses with innovative technology solutions. From custom software to cloud infrastructure, we deliver excellence that drives growth.",
       bg: image,
+      size:"contain",
+      color:"#000000"
     },
     {
       title: "Empowering Businesses",
@@ -34,6 +36,8 @@ export default function Home() {
       description:
         "We deliver future-ready IT solutions that help companies grow smarter, faster, and stronger. Your trusted partner in digital transformation.",
       bg: side,
+      size:"cover",
+       color:"#000000"
     },
     {
       title: "Your Trusted Technology Partner",
@@ -41,6 +45,8 @@ export default function Home() {
       description:
         "From idea to deployment — we guide you with clarity, strength, and transparency. Building strong foundations for your business success.",
       bg: image1,
+      size:"cover",
+       color:"#000000"
     },
   ];
 
@@ -127,9 +133,12 @@ export default function Home() {
         ref={heroRef}
         className="hero-slider-section"
         style={{
+          
           backgroundImage: ` url(${slides[currentSlide].bg})`,
-          backgroundSize: "cover",
-          backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
+          backgroundSize: slides[currentSlide].size,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition:'center',
+          // backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
           transition: "background-image 1s ease-in-out",
         }}
       >
@@ -137,7 +146,7 @@ export default function Home() {
           <div className="hero-content-wrapper">
 
             <div className="hero-text-content">
-              <h1 className="hero-title">{slides[currentSlide].title}</h1>
+              <h1 style={{color: slides[currentSlide].textColor}}  className="hero-title">{slides[currentSlide].title}</h1>
               <p className="hero-subtitle">{slides[currentSlide].subtitle}</p>
               <p className="hero-description">{slides[currentSlide].description}</p>
 

@@ -38,7 +38,7 @@ h1{font-size:40px;margin:12px 0;align-content: center;}
 /* HERO SECTION */
 .hero-section {
   background: linear-gradient(135deg, #1e293b, #475569);
-  color: white;
+  /* color: white; */
   padding: 110px 10px;
   text-align: center;
 }
@@ -49,6 +49,7 @@ h1{font-size:40px;margin:12px 0;align-content: center;}
 
 .hero-title {
   font-size: 56px;
+  
   font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -57,7 +58,7 @@ h1{font-size:40px;margin:12px 0;align-content: center;}
 
 .hero-subtitle {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--accent);
   margin-bottom: 20px;
 }
@@ -404,24 +405,6 @@ button {
 }
 
 
-
-@media (max-width: 768px) {
-  .footer-column.footer-brand {
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .footer-logo {
-    font-size: 20px;
-    padding-right: 80px;
-  }
-
-  .footer-desc {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-}
 @media (max-width: 768px) {
 
   * {
@@ -958,6 +941,118 @@ button {
 }
 
 /* ================= FOOTER ================= */
+/* ===============================
+   MOBILE FOOTER (≤768px)
+================================ */
+@media (max-width: 768px) {
+
+  /* Reset overflow issues */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Footer layout */
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* Brand column */
+  .footer-column.footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Logo image */
+  .footer-logo-img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto 12px auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  /* Logo text */
+  .footer-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    letter-spacing: 1px;
+  }
+
+  /* Description */
+  .footer-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #9ca3af;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Footer columns */
+  .footer-column {
+    align-items: center;
+  }
+
+  .footer-column-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  /* Menu */
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-menu a {
+    font-size: 14px;
+    color: #9ca3af;
+    text-decoration: none;
+  }
+
+  .footer-menu a:hover {
+    color: #f4a029;
+  }
+
+  /* Contact */
+  .footer-contact {
+    font-size: 13px;
+    color: #9ca3af;
+    text-align: center;
+  }
+
+  .footer-contact strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* Footer bottom */
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+    border-top: 1px solid #1e293b;
+  }
+}
 
 
 .footer-container {
@@ -977,11 +1072,7 @@ button {
 
 
 
-.footer-logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin: 0;
-}
+
 
 .footer-desc {
   color: #94a3b8;
@@ -1455,6 +1546,7 @@ button {
   background: #f7f7f8;
 }
 
+
 /* hero area (kept consistent) */
 .team-hero-banner {
   min-height: 220px;
@@ -1473,16 +1565,23 @@ button {
   box-sizing: border-box;
 }
 
-/* Profile image cursor */
-.team-avatar {
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
+/* ===============================
+   TEAM AVATAR – MOBILE ONLY
+================================ */
+@media (max-width: 768px) {
+
+  .team-avatar {
+    width: 200px !important;        /* fixed size for mobile */
+    height: 96px !important;       /* 🔥 force equal height */
+    aspect-ratio: 1 / 1;            /* extra safety */
+    border-radius: 60% !important;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
-/* Profile image cursor + hover zoom */
-.team-avatar {
-  cursor: zoom-in;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
+
 
 .team-avatar:hover {
   transform: scale(1.08);
@@ -3306,9 +3405,7 @@ button {
     font-size: 36px;
   }
 
-  .hero-subtitle {
-    font-size: 20px;
-  }
+ 
 
   .hero-description {
     font-size: 16px;
@@ -3397,10 +3494,10 @@ button {
     margin-bottom: 10px;
   }
 
-  .hero-subtitle {
+  /* .hero-subtitle {
     font-size: 18px;
     margin-bottom: 12px;
-  }
+  } */
 
   .hero-description {
     font-size: 14px;

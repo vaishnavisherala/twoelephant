@@ -60,31 +60,49 @@ export default function App() {
         </button>
 
         {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="mobile-menu">
-            <Link to="/" onClick={() => setMenuOpen(false)}></Link>
-            <Link to="/">Home</Link>
-           <Link to="/team">Team</Link>
+        {/* Mobile Menu */}
+{menuOpen && (
+  <div className="mobile-menu">
 
+    <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
 
-            <details className="mobile-dropdown">
-    <summary>Services</summary>
-    <div className="mobile-dropdown-list">
-      <Link to="/services">Our Services</Link>
-      <Link to="/industries">Industries We Serve</Link>
-     
-    </div>
-  </details>
-          <Link to="/case-studies">Case Studies</Link>
+    <Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link>
 
-            <Link to="/careers" onClick={() => setMenuOpen(false)}>Career</Link>
-            {/* <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
-            <Link to="/register" onClick={() => setMenuOpen(false)}>Register</Link> */}
-            <Link to="/about-us" onClick={() => setMenuOpen(false)}>About Us</Link> 
-            <Link className="nav-contact-btn" to="/contact"> Contact Us</Link>
+    <details className="mobile-dropdown">
+      <summary>Services</summary>
+      <div className="mobile-dropdown-list">
+        <Link to="/services" onClick={() => setMenuOpen(false)}>
+          Our Services
+        </Link>
+        <Link to="/industries" onClick={() => setMenuOpen(false)}>
+          Industries We Serve
+        </Link>
+      </div>
+    </details>
 
-          </div>
-        )}
+    <Link to="/case-studies" onClick={() => setMenuOpen(false)}>
+      Case Studies
+    </Link>
+
+    <Link to="/careers" onClick={() => setMenuOpen(false)}>
+      Career
+    </Link>
+
+    <Link to="/about-us" onClick={() => setMenuOpen(false)}>
+      About Us
+    </Link>
+
+    <Link
+      className="nav-contact-btn"
+      to="/contact"
+      onClick={() => setMenuOpen(false)}
+    >
+      Contact Us
+    </Link>
+
+  </div>
+)}
+
       </nav>
 
       <main>
