@@ -23,7 +23,7 @@ export default function App() {
       <nav className="nav responsive-nav">
         <div className="brand">
           <img src={logo} alt="Two Elephants" className="logo" />
-          <span className="brand-text">TWO ELEPHANTS</span>
+          <span className="brand-text">TWO ELEPHANTS<br/>TECHNOLOGIES LLP</span>
         </div>
 
         {/* Desktop Menu */}

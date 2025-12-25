@@ -11,13 +11,15 @@ import {
 } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
-import side from "../images/side.jpg";
-import image1 from "../images/casestudy.jpeg";
+import side from "../images/img1.jpg";
+import image1 from "../images/img.png";
 import image from "../images/i.png";
 import casestudyImg from "../images/casestudy.jpeg";
 import Footer from "./Footer";
 
 export default function Home() {
+  const isMobile = window.innerWidth <= 850;
+
  const navigation= useNavigate();
   /* ===================== SLIDES WITH BACKGROUND IMAGES ===================== */
   const slides = [
@@ -32,12 +34,16 @@ export default function Home() {
     },
     {
       title: "Empowering Businesses",
-      subtitle: "Technology • Innovation • Trust",
+      subtitle: "Technology • Trust",
       description:
-        "We deliver future-ready IT solutions that help companies grow smarter, faster, and stronger. Your trusted partner in digital transformation.",
+        "We deliver future-ready IT\n solutions that help companies\n grow smarter, faster, stronger.\n Your trusted partner in\n digital transformation",
       bg: side,
       size:"cover",
-       color:"#000000"
+       mobileSize: "cover",
+       position:"center center",
+    mobilePosition: "center bottom",
+       color:"#000000",
+       textColor:"#ffffff"
     },
     {
       title: "Your Trusted Technology Partner",
@@ -104,7 +110,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 9000);
+    }, 12000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -135,8 +141,14 @@ export default function Home() {
         style={{
           
           backgroundImage: ` url(${slides[currentSlide].bg})`,
-          backgroundSize: slides[currentSlide].size,
-          backgroundRepeat: "no-repeat",
+backgroundSize: isMobile && slides[currentSlide].mobileSize
+      ? slides[currentSlide].mobileSize
+      : slides[currentSlide].size,
+
+
+      backgroundPosition:"center",
+
+            backgroundRepeat: "no-repeat",
           backgroundPosition:'center',
           // backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
           transition: "background-image 1s ease-in-out",

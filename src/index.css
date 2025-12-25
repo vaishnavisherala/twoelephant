@@ -3358,14 +3358,17 @@ button {
     gap: 40px;
     text-align: center;
   }
-
-  .hero-text-content {
-    text-align: center;
-    margin-top: -80px !important;
+.hero-description {
+    white-space: pre-line;
   }
-
+ .hero-text-content {
+    margin-top: -30px !important;
+  }
+  
   .hero-image-container {
     height: 350px;
+    position: relative;
+    z-index: 2;
   }
 
   .floating-card {
@@ -3375,6 +3378,7 @@ button {
   .hero-slider-section {
     padding: 80px 20px 60px;
     min-height: 100vh;
+    background-position: center 92%;
   }
 
   .hero-chip-row {
@@ -3467,6 +3471,8 @@ button {
   .hero-slider-section {
     padding: 60px 16px 40px;
     min-height: auto;
+        background-position: center 85%;
+
   }
 
   .hero-slider-container {

@@ -13,7 +13,7 @@ export default function Team() {
 
   const topLeaders = [
     {
-      name: "Prashant Rathi",
+      name: "Prashant Ratthi",
       role: "Co-Founder & CEO,Two Elephants",
       img: pt,
       bio: "Holds an MBA from Sydney and brings strong cross-market business acumen with execution rigor. He contributes to the legacy of Pushpa Textile, a Solapur-based manufacturer with over 50 years of experience",
