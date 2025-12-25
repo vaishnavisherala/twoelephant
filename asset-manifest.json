@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/twoelephant/static/css/main.242f4280.css",
+    "main.css": "/twoelephant/static/css/main.065cef47.css",
     "main.js": "/twoelephant/static/js/main.6e80b995.js",
     "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
     "static/media/image1.png": "/twoelephant/static/media/image1.7db107a0da2b29eb65ce.png",
@@ -26,11 +26,11 @@
     "static/media/team2.jpeg": "/twoelephant/static/media/team2.aa1a78b1a46e4e4b2613.jpeg",
     "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
     "index.html": "/twoelephant/index.html",
-    "main.242f4280.css.map": "/twoelephant/static/css/main.242f4280.css.map",
+    "main.065cef47.css.map": "/twoelephant/static/css/main.065cef47.css.map",
     "main.6e80b995.js.map": "/twoelephant/static/js/main.6e80b995.js.map"
   },
   "entrypoints": [
-    "static/css/main.242f4280.css",
+    "static/css/main.065cef47.css",
     "static/js/main.6e80b995.js"
   ]
 }
