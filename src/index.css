@@ -3409,8 +3409,6 @@ button {
     font-size: 36px;
   }
 
- 
-
   .hero-description {
     font-size: 16px;
   }
@@ -3485,10 +3483,11 @@ button {
     align-items: stretch;
   }
 
-  .hero-text-content {
+  /* .hero-text-content {
     margin-top: -20px !important;
     text-align: center;
-  }
+
+  } */
 
   .hero-image-container {
     height: 280px;
