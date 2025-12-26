@@ -44,9 +44,9 @@ export default function Home() {
     },
     {
       title: "Empowering Businesses",
-      subtitle: "Technology • Trust",
+      subtitle: "Technology • Innovation • Trust",
       description:
-        "We deliver future-ready IT\nsolutions that help companies\ngrow smarter, faster, stronger.\nYour trusted partner in\ndigital transformation",
+        "We deliver future-ready IT solutions\n that help companies\ngrow smarter, faster, stronger.\nYour trusted partner in\ndigital transformation",
       bg: side,
       size: "cover",
       mobileSize: "cover",

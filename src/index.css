@@ -437,12 +437,11 @@ button {
 
 /* Footer logo image */
 .footer-logo-img {
-  height: 70px;
-  margin-bottom: 10px;
-    padding-right: 150px;
-  padding-left: 150px;
-  object-fit: contain;
-  display: block;
+   width: 90px;          /* 🔥 Bigger logo */
+    height: auto;
+    margin-bottom: 12px;
+    padding: 0;           /* ❌ remove side padding */
+    object-fit: contain;
 }
 
 .footer-brand {
