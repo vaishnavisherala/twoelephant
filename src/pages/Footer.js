@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Footer content blocks */}
           <div className="footer-column footer-brand">
             <img src={logo} alt="Two Elephants" className="footer-logo-img" />
-            <h3 className="footer-logo">Two Elephants</h3>
+            <h3 className="footer-logo">Two Elephants<br/>Technologies LLP</h3>
             <p className="footer-desc">
               Advanced digital engineering solutions and IT services for enterprises worldwide.
             </p>
@@ -39,8 +39,8 @@ const Footer = () => {
 
           <div className="footer-column">
             <h4 className="footer-column-title">Contact Us</h4>
-            <p className="footer-contact"><br />India: 30/70, Vivekanand House, Padma Nagar, Akkalkot Road, Solapur -413005<br />
-              Solapur – 413005<br/><br/> USA: 2903 Rutherford Place Ct, Katy<br />
+            <p className="footer-contact"><br />India: 30/70, Vivekanand House, Padma Nagar, Akkalkot Road, Solapur - 413005<br />
+            <br/> USA: 2903 Rutherford Place Ct, Katy<br />
               Houston, TX – 77494</p><br/>
              
             <p className="footer-contact"><br />info@twoelephants.org</p>

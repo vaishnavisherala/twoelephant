@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../images/side.jpg";
+import heroImg from "../images/img1.jpg";
 import casestudy from "../images/casestudy.jpeg";
 import manufacturing from "../images/manufacturing.jpg";
 import retail from "../images/retail.jpg";

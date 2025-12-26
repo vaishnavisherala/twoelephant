@@ -1,87 +1,123 @@
 import React from "react";
 import Footer from "./Footer";
+import bannerImg from "../images/edu.jpg";
+import aiImg from "../images/img1.jpg"; // use any AI-related image
 
-import eduImg from "../images/edu.jpeg";
-import helImg from "../images/hel.jpeg";
-import eImg from "../images/e.jpeg";
-
-export default function CaseStudies() {
-  const caseStudies = [
-    {
-      title: "Education Management System",
-      domain: "Education",
-      description:
-        "A scalable education ERP platform that digitized attendance, fees, communication, and academic workflows.",
-      techStack: ["React", "Node.js", "MongoDB", "AWS"],
-      image: eduImg,
-    },
-    {
-      title: "Healthcare Patient Portal",
-      domain: "Healthcare",
-      description:
-        "A secure patient portal enabling appointments, medical records access, and automated reminders.",
-      techStack: ["Angular", "Express.js", "MySQL", "Azure"],
-      image: helImg,
-    },
-    {
-      title: "Retail E-Commerce Platform",
-      domain: "E-Commerce",
-      description:
-        "A high-performance online retail platform with real-time inventory, payments, and admin dashboard.",
-      techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-      image: eImg,
-    },
-  ];
-
+export default function CaseStudyAI() {
   return (
-    <div className="case-page">
-      {/* HERO (UNCHANGED) */}
+    <div className="case-detail-page">
+      {/* ===================== HERO ===================== */}
       <section
-        className="team-hero-banner"
-        style={{
-          backgroundImage: `url(${require("../images/side.jpg")})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          padding: "120px 20px",
-          position: "relative",
-        }}
+        className="case-detail-hero"
+        style={{ backgroundImage: `url(${bannerImg})` }}
       >
-        <div style={{ position: "absolute", inset: 0 }} />
-        <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
-          <h1 style={{ fontSize: 46, fontWeight: 700 }}>Case Studies</h1>
-          <p style={{ fontSize: 20, maxWidth: 720, margin: "0 auto" }}>
-            Solving complex business challenges with technology-driven solutions.
-          </p>
+        <div className="case-detail-overlay" />
+        <div className="case-detail-hero-content">
+          <span className="case-tag">CASE STUDY</span>
+          <h1>
+            AI-Driven Computer Vision Solutions for Smart Surveillance &
+            Automation
+          </h1>
         </div>
       </section>
 
-      {/* CASE STUDIES – PRAKAT STYLE WITH IMAGES */}
-      <section className="prakat-case-section">
-        <div className="prakat-case-grid">
-          {caseStudies.map((study, index) => (
-            <div className="prakat-case-card" key={index}>
-              
-              {/* IMAGE */}
-              <div className="case-img-wrapper">
-                <img src={study.image} alt={study.title} />
-              </div>
+      {/* ===================== OVERVIEW ===================== */}
+      <section className="case-section light-bg">
+        <div className="case-container two-col">
+          <div>
+            <span className="case-tag green">AI SOLUTION</span>
+            <h2>Empowering Intelligent Vision Systems</h2>
+          </div>
 
-              <span className="case-domain">{study.domain}</span>
-
-              <h3>{study.title}</h3>
-              <p className="case-desc">{study.description}</p>
-
-              <div className="case-tech">
-                {study.techStack.map((tech, i) => (
-                  <span key={i}>{tech}</span>
-                ))}
-              </div>
-
-              <button className="case-btn">View Case Study →</button>
-            </div>
-          ))}
+          <div>
+            <h3>OVERVIEW</h3>
+            <p>
+              Two Elephants designed and delivered an AI-powered computer vision
+              platform to automate identity recognition, vehicle monitoring, and
+              real-time surveillance across enterprise and public
+              infrastructure environments.
+            </p>
+            <p>
+              The solution leverages advanced machine learning and deep learning
+              models to enable facial recognition, vehicle number plate
+              detection, and behavior analysis with high accuracy and
+              scalability.
+            </p>
+          </div>
         </div>
       </section>
+
+      {/* ===================== CHALLENGES ===================== */}
+      <section className="case-section">
+        <div className="case-container">
+          <h3>CHALLENGES</h3>
+          <ul className="case-list">
+            <li>
+              Manual identity verification and monitoring processes leading to
+              inefficiencies and security gaps.
+            </li>
+            <li>
+              Difficulty in accurately identifying individuals and vehicles in
+              real-time video streams.
+            </li>
+            <li>
+              High false-positive rates in traditional surveillance systems.
+            </li>
+            <li>
+              Need for scalable AI systems capable of processing large volumes
+              of video data.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ===================== SOLUTION ===================== */}
+      <section className="case-section light-bg">
+        <div className="case-container">
+          <h3>SOLUTION IMPLEMENTED</h3>
+          <ul className="case-list">
+            <li>
+              Developed AI-based Face Recognition systems using deep neural
+              networks for accurate identity verification.
+            </li>
+            <li>
+              Implemented Automatic Number Plate Recognition (ANPR) for vehicle
+              detection and tracking.
+            </li>
+            <li>
+              Enabled real-time video analytics for anomaly detection and
+              behavioral insights.
+            </li>
+            <li>
+              Integrated role-based dashboards for security teams and
+              administrators.
+            </li>
+            <li>
+              Deployed cloud-ready and edge-optimized AI models for scalability
+              and low latency.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ===================== TECHNOLOGIES ===================== */}
+      <section className="case-section">
+        <div className="case-container">
+          <h3>TECHNOLOGIES USED</h3>
+          <div className="case-tech">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>TensorFlow</span>
+            <span>PyTorch</span>
+            <span>YOLO</span>
+            <span>Deep Learning</span>
+            <span>Computer Vision</span>
+            <span>AWS</span>
+            <span>Edge AI</span>
+          </div>
+        </div>
+      </section>
+
 
       <Footer />
     </div>

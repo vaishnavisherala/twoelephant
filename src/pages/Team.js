@@ -16,12 +16,14 @@ export default function Team() {
       name: "Prashant Ratthi",
       role: "Co-Founder & CEO,Two Elephants",
       img: pt,
+      social:"https://www.linkedin.com/in/prashant-rathi-pr-28b26b7/",
       bio: "Holds an MBA from Sydney and brings strong cross-market business acumen with execution rigor. He contributes to the legacy of Pushpa Textile, a Solapur-based manufacturer with over 50 years of experience",
     },
     {
       name: "Anuradha Biswas",
       role: "Chief Executive Officer & Founder,Prakat Solutions",
       img: Au,
+      social:"https://www.linkedin.com/in/anubiswas/",
       bio: "A mentor and catalyst with over two decades of leadership experience. Has architected and scaled innovative businesses and global delivery units for Infosys, Aztec, CyberCash, VeriFone, and CA Technologies.",
     },
   ];
@@ -31,18 +33,21 @@ export default function Team() {
       name: "Abhik Biswas",
       role: "Chief Technology Officer & Co-Founder, Prakat Solutions",
       img: Abhi,
+      social:"https://www.linkedin.com/in/abhik/",
       bio: "Over three decades of engineering and platform leadership experience. Former senior technology leader at TCS, VeriFone, CA, Cisco, and other global enterprises, driving large-scale systems.",
     },
     {
       name: "Sapna Rathi",
       role: "Co-Founder, Two Elephants",
       img: Sapna,
+      social:" https://www.linkedin.com/in/sapna-rathi-9823a512/",
       bio: "Leads operational governance and process architecture. Specializes in implementing IT-enabled ISO frameworks to build scalable and compliant operating models.",
     },
     {
       name: "Pankaj Rathi",
       role: "Technical Lead",
       img: pankaj,
+      social:" https://www.linkedin.com/in/pankaj-rathi-474b6211/",
       bio: "He manages our Overseas Operations. He graduated from VJTI Mumbai as Gold Medalist in Textile Engineering & completed Masters degree in Textiles, NY. Currently based in Houstan Texas and leading a Global Shipping Business.",
     },
   ];
@@ -60,7 +65,7 @@ export default function Team() {
       <section
         className="team-hero-banner"
         style={{
-          backgroundImage: `url(${require("../images/side.jpg")})`,
+          backgroundImage: `url(${require("../images/img1.jpg")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           padding: "70px 0px",
@@ -183,9 +188,18 @@ function CompactCard({ leader, index, onImageClick, avatarSize }) {
       <div className="card-body" style={{ paddingTop }}>
         <h3 className="team-name">{leader.name}</h3>
         <p className="team-role">{leader.role}</p>
-        <p style={{ fontSize: 12, color: "#3498db" }}>{leader.social}</p>
         <p className="team-bio">{leader.bio}</p>
-        <button className="btn">View Profile</button>
+        {/* VIEW PROFILE → LINKEDIN */}
+        {leader.social && (
+          <a
+            href={leader.social}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            View Profile
+          </a>
+        )}
       </div>
     </article>
   );

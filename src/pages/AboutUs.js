@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroImg from "../images/side.jpg";
+import heroImg from "../images/img1.jpg";
 import Footer from "./Footer";
 export default function AboutUs() {
   return (

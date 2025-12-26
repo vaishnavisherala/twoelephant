@@ -10,7 +10,7 @@ import {
   LineChart,
 } from "lucide-react";
  import { useNavigate } from "react-router-dom";
-import heroImg from "../images/side.jpg";
+import heroImg from "../images/img1.jpg";
 import casetudy1 from "../images/casestudy.jpeg";
 import producteng from "../images/productengg.jpg";
 import cyber from "../images/cyber.jpg";
