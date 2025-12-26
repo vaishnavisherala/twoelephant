@@ -38,6 +38,7 @@ export default function Home() {
       description:
         "Transforming businesses with innovative technology solutions. From custom software to cloud infrastructure, we deliver excellence that drives growth.",
       bg: image1,
+
       logo: image,
       size: "cover",
       textColor: "#ffffff",

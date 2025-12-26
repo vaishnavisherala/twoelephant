@@ -40,7 +40,7 @@ export default function Team() {
       name: "Sapna Rathi",
       role: "Co-Founder, Two Elephants",
       img: Sapna,
-      social:" https://www.linkedin.com/in/sapna-rathi-9823a512/",
+      social:"https://www.linkedin.com/in/sapna-rathi-44928b3b/",
       bio: "Leads operational governance and process architecture. Specializes in implementing IT-enabled ISO frameworks to build scalable and compliant operating models.",
     },
     {
@@ -75,7 +75,7 @@ export default function Team() {
         <div style={{ position: "absolute", inset: 0}} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
           <h1 style={{ fontSize: 46, fontWeight: 700 }}>Leadership & Team</h1>
-          <p style={{ fontSize: 20, maxWidth: 720, margin: "0 auto" }}>
+          <p style={{ color:"orange", fontSize: 22, fontWeight: 600, maxWidth: 800, margin: "0 auto" }}>
             Meet the people who drive innovation, guide our mission, and build the future.
           </p>
         </div>
