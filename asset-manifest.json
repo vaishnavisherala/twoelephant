@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/twoelephant/static/css/main.a38f29da.css",
-    "main.js": "/twoelephant/static/js/main.12cca04d.js",
-    "static/media/logo.png": "/twoelephant/static/media/logo.4b655ec24a73ec943bdb.png",
+    "main.css": "/twoelephant/static/css/main.3e32c793.css",
+    "main.js": "/twoelephant/static/js/main.5aabe30c.js",
     "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
     "static/media/image1.png": "/twoelephant/static/media/image1.7db107a0da2b29eb65ce.png",
     "static/media/edu.jpg": "/twoelephant/static/media/edu.c7acb3a2fd2d11dddf17.jpg",
     "static/media/image.png": "/twoelephant/static/media/image.2a83765b74c51a1a0e2b.png",
+    "static/media/logo_wipe_bg.png": "/twoelephant/static/media/logo_wipe_bg.dbc715775e3c8eefef15.png",
+    "static/media/ima.png": "/twoelephant/static/media/ima.8461e6ea75d0e9767bf8.png",
     "static/media/Abhi.jpeg": "/twoelephant/static/media/Abhi.a48c8524bcfff06d137c.jpeg",
     "static/media/img.png": "/twoelephant/static/media/img.33deec4596d505d1b2d0.png",
     "static/media/Au.jpeg": "/twoelephant/static/media/Au.d2bdb1135f72b25d3610.jpeg",
@@ -24,11 +25,11 @@
     "static/media/team2.jpeg": "/twoelephant/static/media/team2.aa1a78b1a46e4e4b2613.jpeg",
     "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
     "index.html": "/twoelephant/index.html",
-    "main.a38f29da.css.map": "/twoelephant/static/css/main.a38f29da.css.map",
-    "main.12cca04d.js.map": "/twoelephant/static/js/main.12cca04d.js.map"
+    "main.3e32c793.css.map": "/twoelephant/static/css/main.3e32c793.css.map",
+    "main.5aabe30c.js.map": "/twoelephant/static/js/main.5aabe30c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a38f29da.css",
-    "static/js/main.12cca04d.js"
+    "static/css/main.3e32c793.css",
+    "static/js/main.5aabe30c.js"
   ]
 }
