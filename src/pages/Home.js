@@ -10,9 +10,10 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import side from "../images/img1.jpg";
-import image1 from "../images/img.png";
-import image from "../images/logo.png";
+import image1 from "../images/ima.png";
+import image2 from "../images/img.png";
+import image3 from "../images/img1.jpg";
+import image from "../images/logo_wipe_bg.png";
 import casestudyImg from "../images/casestudy.jpeg";
 import Footer from "./Footer";
 
@@ -37,18 +38,16 @@ export default function Home() {
       subtitle: "Advanced IT Services & Software Development",
       description:
         "Transforming businesses with innovative technology solutions. From custom software to cloud infrastructure, we deliver excellence that drives growth.",
-      bg: image1,
-
-      logo: image,
       size: "cover",
+      bg:image1,
       textColor: "#ffffff",
     },
     {
       title: "Empowering Businesses",
       subtitle: "Technology • Innovation • Trust",
       description:
-        "We deliver future-ready IT solutions\n that help companies\ngrow smarter, faster, stronger.\nYour trusted partner in\ndigital transformation",
-      bg: side,
+        "We deliver future-ready IT solutions that help companies grow smarter, faster, stronger.\nYour trusted partner in\ndigital transformation",
+      bg: image2,
       size: "cover",
       mobileSize: "cover",
       position: "center",
@@ -60,7 +59,7 @@ export default function Home() {
       subtitle: "Strategy • Execution • Support",
       description:
         "From idea to deployment — we guide you with clarity, strength, and transparency.",
-      bg: image1,
+      bg: image3,
       size: "cover",
       textColor: "#ffffff",
     },
@@ -143,13 +142,21 @@ export default function Home() {
           transition: "background-image 1s ease-in-out",
         }}
       >
+        {/* ✅ WATERMARK – ONLY FIRST SLIDE */}
+        {slides[currentSlide].isFirstSlide && (
+          <div
+            className="hero-logo-watermark"
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        )}
+
         <div className="hero-slider-container">
           <div
             className={`hero-content-wrapper ${
               slides[currentSlide].isFirstSlide ? "hero-split" : ""
             }`}
           >
-            {/* TEXT */}
+            {/* TEXT – UNCHANGED */}
             <div className="hero-text-content">
               <h1
                 className="hero-title"
@@ -175,19 +182,9 @@ export default function Home() {
                 </button>
               </div>
             </div>
-
-            {/* LOGO – ONLY FIRST SLIDE */}
-            {slides[currentSlide].isFirstSlide && (
-              <div className="hero-logo-right">
-                <img
-                  src={slides[currentSlide].logo}
-                  alt="Company Logo"
-                />
-              </div>
-            )}
           </div>
 
-          {/* DOTS */}
+          {/* DOTS – UNCHANGED */}
           <div className="slider-dots">
             {slides.map((_, index) => (
               <span
