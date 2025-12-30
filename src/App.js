@@ -13,6 +13,7 @@ import Team from './pages/Team';
 import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
 import logo from "../src/images/image1.png"
+import ScrollToTop from './pages/ScrollToTop';
 
 
 export default function App() {
@@ -106,6 +107,7 @@ export default function App() {
       </nav>
 
       <main>
+        <ScrollToTop/>
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -118,9 +120,9 @@ export default function App() {
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+       
       </main>
 
-     
     </div>
   );
 }

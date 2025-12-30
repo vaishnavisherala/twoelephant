@@ -30,10 +30,13 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-column-title">Our Services</h4>
             <ul className="footer-menu">
-              <li><Link to="/services">Digital Transformation</Link></li>
-              <li><Link to="/services">AI Solutions</Link></li>
-              <li><Link to="/services">Cybersecurity</Link></li>
-              <li><Link to="/services">Product Engineering</Link></li>
+              <li><Link to="/services"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Digital Transformation</Link></li>
+              <li><Link to="/case-studies">AI Solutions</Link></li>
+              <li><Link to="/services"
+      onClick={() => window.scrollTo({ top: 3, behavior: "smooth" })}>Cybersecurity</Link></li>
+              <li><Link to="/services"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product Engineering</Link></li>
             </ul>
           </div>
 
