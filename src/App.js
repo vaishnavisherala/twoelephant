@@ -23,7 +23,7 @@ export default function App() {
     <div className="app">
       <nav className="nav responsive-nav">
         <div className="brand">
-          <img src={logo} alt="Two Elephants" className="logo" />
+          <Link to="/"><img src={logo} alt="Two Elephants" className="logo" /></Link>
           <span className="brand-text">TWO ELEPHANTS<br/>TECHNOLOGIES LLP</span>
         </div>
 
