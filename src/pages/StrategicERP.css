@@ -1,0 +1,166 @@
+.erp-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #1d3b53;
+}
+
+/* HERO */
+.erp-hero {
+  min-height: 80vh;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.erp-hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.erp-hero h3 {
+  font-size: 24px;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+.erp-hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.erp-primary-btn {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #f4a029;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.erp-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.erp-section.light {
+  background: #f4f7fb;
+}
+
+.erp-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.section-desc {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  color: #475569;
+}
+
+/* BENEFITS GRID */
+.erp-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.erp-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* FEATURES */
+.erp-feature-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.erp-feature {
+  background: #eef3ff;
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* MODULES */
+.erp-modules {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+}
+
+.module-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.module-box ul {
+  padding-left: 20px;
+}
+
+/* CTA */
+.erp-cta {
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.erp-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.erp-stats div {
+  background: rgba(255,255,255,0.15);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.erp-secondary-btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: #1e3c72;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .erp-hero h1 {
+    font-size: 36px;
+  }
+
+  .erp-section h2 {
+    font-size: 28px;
+  }
+
+  .erp-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

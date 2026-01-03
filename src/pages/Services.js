@@ -44,6 +44,14 @@ export default function Services() {
       sub: "Ensuring safety, privacy, and security for communities and partners.",
     },
     {
+       image: ommimarket,
+      title: "Strategic ERP Solutions",
+      description:
+        "Manufacturing ERP for Textile Industry: Empowering textile manufacturers with intelligent, integrated ERP solutions to improve productivity, quality, and profitability.",
+      sub:
+        "StrategicERP simplifies complex manufacturing operations and empowers management with real-time insights, automation, and centralized control.",
+    },
+    {
        image: dataAI,
       title: "AI & Data Solutions",
       description:

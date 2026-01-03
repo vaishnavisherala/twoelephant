@@ -4452,9 +4452,56 @@ font-weight: 600px;
 }
 
 /* MOBILE ADJUSTMENT */
+
+/* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
-  .hero-logo-watermark {
-    background-size: 240px;
-    opacity: 0.09;
+
+  .about-header {
+    min-height: 220px;
+    padding: 70px 16px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .about-subtitle {
+    font-size: 15px;
+  }
+
+  .about-hero-section {
+    padding: 50px 16px;
+  }
+
+ .hero-left {
+    display: block !important;
+    column-count: 1 !important;
+    column-gap: 0 !important;
+    columns: auto !important;
+  }
+
+  .hero-left p {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+    font-size: 15.5px;
+    line-height: 1.7;
+    text-align: left;
+    break-inside: avoid;
+  }
+
+  .vision-mission-wrapper {
+    grid-template-columns: 1fr;
+    padding: 50px 16px;
+  }
+
+  .vision-box,
+  .mission-box {
+    padding: 26px 20px;
+  }
+
+  .vision-box h2,
+  .mission-box h2 {
+    font-size: 22px;
   }
 }

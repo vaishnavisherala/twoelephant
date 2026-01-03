@@ -35,8 +35,7 @@ const Footer = () => {
               <li><Link to="/case-studies">AI Solutions</Link></li>
               <li><Link to="/services"
       onClick={() => window.scrollTo({ top: 3, behavior: "smooth" })}>Cybersecurity</Link></li>
-              <li><Link to="/services"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product Engineering</Link></li>
+             
             </ul>
           </div>
 

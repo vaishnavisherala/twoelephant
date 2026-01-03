@@ -14,7 +14,7 @@ import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
 import logo from "../src/images/image1.png"
 import ScrollToTop from './pages/ScrollToTop';
-
+import StrategicERP from './pages/StrategicERP';
 
 export default function App() {
 
@@ -43,6 +43,7 @@ export default function App() {
       <Link to="/industries">Industries We Serve</Link>
           </div>
   </div>
+          <Link to="/ERP">ERP</Link>
           <Link to="/case-studies">Case Studies</Link>
 
           <Link to="/careers">Career</Link>
@@ -80,6 +81,10 @@ export default function App() {
         </Link>
       </div>
     </details>
+
+  <Link to="/ERP" onClick={() => setMenuOpen(false)}>
+      ERP
+    </Link>
 
     <Link to="/case-studies" onClick={() => setMenuOpen(false)}>
       Case Studies
@@ -119,6 +124,7 @@ export default function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/ERP" element={<StrategicERP />} />
         </Routes>
        
       </main>
