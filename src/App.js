@@ -12,7 +12,7 @@ import Industries from './pages/Industries';
 import Team from './pages/Team';
 import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
-import logo from "../src/images/image1.png"
+import logo from "../src/images/logo.png"
 import ScrollToTop from './pages/ScrollToTop';
 import StrategicERP from './pages/StrategicERP';
 
