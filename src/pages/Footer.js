@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/image.png"
+import logo from "../images/logo.png"
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 const Footer = () => {
@@ -45,13 +45,20 @@ const Footer = () => {
             <br/> USA: 2903 Rutherford Place Ct, Katy<br />
               Houston, TX – 77494</p><br/>
              
-            <p className="footer-contact"><br />info@twoelephants.org</p>
-            <p className="footer-contact"><br />www.twoelephants.org</p>
+<a href="mailto:info@twoelephants.org" className="footer-contact" style={{ textDecoration: "none" }}>
+  <br />
+  info@twoelephants.org
+</a>
+<br/>
+            <a href="https://www.twoelephants.org" className="footer-contact" style={{ textDecoration: "none" }}>
+              <br />
+              www.twoelephants.org
+            </a>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 Two Elephants. All rights reserved.</p>
+          <p style={{fontSize:"16px"}}>© 2026 Two Elephants. All rights reserved.</p>
         </div>
       </footer>
     </div>

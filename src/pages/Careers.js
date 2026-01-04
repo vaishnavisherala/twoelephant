@@ -57,7 +57,7 @@ export default function Careers() {
   <div className="openings-grid">
     <div className="opening-card">
       <h3>Python Developer</h3>
-      <p className="opening-location">📍 Solapur / Remote</p>
+      <p className="opening-location">📍 On-site / Internship</p>
       <ul className="opening-points">
         <li>Strong knowledge of Python & backend development</li>
         <li>Experience with Django / Flask / FastAPI</li>

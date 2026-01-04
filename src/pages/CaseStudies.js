@@ -105,15 +105,15 @@ export default function CaseStudyAI() {
         <div className="case-container">
           <h3>TECHNOLOGIES USED</h3>
           <div className="case-tech">
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>TensorFlow</span>
-            <span>PyTorch</span>
-            <span>YOLO</span>
-            <span>Deep Learning</span>
-            <span>Computer Vision</span>
-            <span>AWS</span>
-            <span>Edge AI</span>
+            <span style={{fontSize:"18px"}}>Python</span>
+            <span style={{fontSize:"18px"}}>OpenCV</span>
+            <span style={{fontSize:"18px"}}>TensorFlow</span>
+            <span style={{fontSize:"18px"}}>PyTorch</span>
+            <span style={{fontSize:"18px"}}>YOLO</span>
+            <span style={{fontSize:"18px"}}>Deep Learning</span>
+            <span style={{fontSize:"18px"}}>Computer Vision</span>
+            <span style={{fontSize:"18px"}}>AWS</span>
+            <span style={{fontSize:"18px"}}>Edge AI</span>
           </div>
         </div>
       </section>

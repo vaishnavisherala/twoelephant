@@ -43,7 +43,7 @@ export default function App() {
       <Link to="/industries">Industries We Serve</Link>
           </div>
   </div>
-          <Link to="/ERP">ERP</Link>
+          {/* <Link to="/ERP">ERP</Link> */}
           <Link to="/case-studies">Case Studies</Link>
 
           <Link to="/careers">Career</Link>
@@ -67,6 +67,9 @@ export default function App() {
   <div className="mobile-menu">
 
     <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+     <Link to="/about-us" onClick={() => setMenuOpen(false)}>
+      About Us
+    </Link>
 
     <Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link>
 
@@ -82,9 +85,9 @@ export default function App() {
       </div>
     </details>
 
-  <Link to="/ERP" onClick={() => setMenuOpen(false)}>
+  {/* <Link to="/ERP" onClick={() => setMenuOpen(false)}>
       ERP
-    </Link>
+    </Link> */}
 
     <Link to="/case-studies" onClick={() => setMenuOpen(false)}>
       Case Studies
@@ -94,9 +97,7 @@ export default function App() {
       Career
     </Link>
 
-    <Link to="/about-us" onClick={() => setMenuOpen(false)}>
-      About Us
-    </Link>
+   
 
     <Link
       className="nav-contact-btn"

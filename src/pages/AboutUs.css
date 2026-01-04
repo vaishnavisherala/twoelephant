@@ -1,0 +1,141 @@
+.about-page {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+/* ================= HERO BACKGROUND ================= */
+.about-hero-bg {
+  position: relative;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0.95) 45%, */
+    /* rgba(255, 255, 255, 0.6) 65%, */
+    /* rgba(255, 255, 255, 0.2) 100% */
+  );
+}
+
+.about-hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.about-hero-content h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.about-hero-content p {
+  font-size: 20px;
+  font-weight:bold;
+  color: orange;
+  line-height: 1.6;
+}
+
+/* ================= CONTENT ================= */
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  padding: 70px 8%;
+  background-color: #e3f3fa;
+
+}
+
+.about-left blockquote {
+  font-size: 20px;
+  color: #64748b;
+  border-left: 4px solid #2563eb;
+  padding-left: 18px;
+  margin-bottom: 37px;
+}
+.about-left p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #475569;
+}
+
+.about-card {
+  background:  rgba(15, 23, 42, 0.85);
+  color: #fff;
+  padding: 36px;
+
+  border-radius: 20px;
+}
+
+.about-card span {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #e3f3fa;
+  font-weight: 600;
+}
+
+.about-card p {
+  margin-top: 30px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* ================= STATS ================= */
+.about-stats {
+  margin: 40px 8% 80px;
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-stats div {
+  text-align: center;
+  flex: 1;
+}
+
+.about-stats h3 {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.about-stats p {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .about-hero-bg {
+    padding: 60px 20px;
+    min-height: 360px;
+  }
+
+ 
+
+  .about-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 20px 60px;
+  }
+}

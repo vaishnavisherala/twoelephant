@@ -16,6 +16,7 @@ import producteng from "../images/productengg.jpg";
 import cyber from "../images/cyber.jpg";
 import dataAI from "../images/dataAI.png";
 import ommimarket from "../images/ommimarket.png";
+import ERP from "../images/ERP.jpg";
 import Footer from "./Footer";
 export default function Services() {
   const navigation= useNavigate();
@@ -44,7 +45,7 @@ export default function Services() {
       sub: "Ensuring safety, privacy, and security for communities and partners.",
     },
     {
-       image: ommimarket,
+       image: ERP,
       title: "Strategic ERP Solutions",
       description:
         "Manufacturing ERP for Textile Industry: Empowering textile manufacturers with intelligent, integrated ERP solutions to improve productivity, quality, and profitability.",
@@ -100,9 +101,9 @@ export default function Services() {
               <h2 className="service-detail-title">{service.title}</h2>
               <p className="service-detail-description">{service.description}</p>
               <p className="service-detail-sub">{service.sub}</p>
-              <button onClick={() => navigation("/case-studies")} className="service-detail-btn">
+              {/* <button onClick={() => navigation("/case-studies")} className="service-detail-btn">
                 Explore Service <span>→</span>
-              </button>
+              </button> */}
             </div>
             <div className="service-detail-image">
               <div 
