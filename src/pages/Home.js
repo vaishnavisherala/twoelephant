@@ -129,7 +129,7 @@ export default function Home() {
         ref={heroRef}
         className="hero-slider-section"
         style={{
-          backgroundImage: `url(${slides[currentSlide].bg})`,
+    backgroundImage: isMobile ? "none" : `url(${slides[currentSlide].bg})`,
           backgroundSize:
             isMobile && slides[currentSlide].mobileSize
               ? slides[currentSlide].mobileSize
@@ -142,15 +142,17 @@ export default function Home() {
           transition: "background-image 1s ease-in-out",
         }}
       >
-        {/* ✅ WATERMARK – ONLY FIRST SLIDE */}
-        {slides[currentSlide].isFirstSlide && (
-          <div
-            className="hero-logo-watermark"
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        )}
+        
 
         <div className="hero-slider-container">
+          {isMobile && (
+    <img
+      src={slides[currentSlide].bg}
+      alt="Hero Slide"
+      className="mobile-hero-image"
+    />
+  )}
+  <div className="mobile-hero-overlay">
           <div
             className={`hero-content-wrapper ${
               slides[currentSlide].isFirstSlide ? "hero-split" : ""
@@ -183,7 +185,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-
+</div>
           {/* DOTS – UNCHANGED */}
           <div className="slider-dots">
             {slides.map((_, index) => (
