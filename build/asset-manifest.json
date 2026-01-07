@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/twoelephant/static/css/main.19298e2c.css",
-    "main.js": "/twoelephant/static/js/main.fbb5ed5f.js",
+    "main.css": "/twoelephant/static/css/main.5e392664.css",
+    "main.js": "/twoelephant/static/js/main.446bd033.js",
     "static/media/logo.png": "/twoelephant/static/media/logo.4b655ec24a73ec943bdb.png",
     "static/media/side.jpg": "/twoelephant/static/media/side.aa0e51c6d8a8c6943505.jpg",
     "static/media/edu.jpg": "/twoelephant/static/media/edu.c7acb3a2fd2d11dddf17.jpg",
-    "static/media/image.png": "/twoelephant/static/media/image.2a83765b74c51a1a0e2b.png",
     "static/media/logo_wipe_bg.png": "/twoelephant/static/media/logo_wipe_bg.dbc715775e3c8eefef15.png",
     "static/media/ima.png": "/twoelephant/static/media/ima.8461e6ea75d0e9767bf8.png",
     "static/media/Abhi.jpeg": "/twoelephant/static/media/Abhi.a48c8524bcfff06d137c.jpeg",
@@ -19,17 +18,18 @@
     "static/media/pt.jpeg": "/twoelephant/static/media/pt.75a11e46714adf33fc09.jpeg",
     "static/media/Sapna.jpeg": "/twoelephant/static/media/Sapna.a23d7b5842797737908e.jpeg",
     "static/media/pankaj.jpeg": "/twoelephant/static/media/pankaj.287db64644447f702ed4.jpeg",
+    "static/media/ERP.jpg": "/twoelephant/static/media/ERP.73091ff69d0afe82f422.jpg",
     "static/media/img1.jpg": "/twoelephant/static/media/img1.1e1388b34f0e3f9dd905.jpg",
     "static/media/manufacturing.jpg": "/twoelephant/static/media/manufacturing.477b0cfcd9f146b75d77.jpg",
     "static/media/retail.jpg": "/twoelephant/static/media/retail.0966c3757e0ce6f78a58.jpg",
     "static/media/team2.jpeg": "/twoelephant/static/media/team2.aa1a78b1a46e4e4b2613.jpeg",
     "static/media/team1.jpeg": "/twoelephant/static/media/team1.fba72661c6268056b049.jpeg",
     "index.html": "/twoelephant/index.html",
-    "main.19298e2c.css.map": "/twoelephant/static/css/main.19298e2c.css.map",
-    "main.fbb5ed5f.js.map": "/twoelephant/static/js/main.fbb5ed5f.js.map"
+    "main.5e392664.css.map": "/twoelephant/static/css/main.5e392664.css.map",
+    "main.446bd033.js.map": "/twoelephant/static/js/main.446bd033.js.map"
   },
   "entrypoints": [
-    "static/css/main.19298e2c.css",
-    "static/js/main.fbb5ed5f.js"
+    "static/css/main.5e392664.css",
+    "static/js/main.446bd033.js"
   ]
 }

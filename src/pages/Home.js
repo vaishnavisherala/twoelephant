@@ -37,7 +37,7 @@ export default function Home() {
       title: "Digital Engineering Solutions",
       subtitle: "Advanced IT Services & Software Development",
       description:
-        "Transforming businesses with innovative technology solutions. From custom software to cloud infrastructure, we deliver excellence that drives growth.",
+        "Transforming businesses with innovative technology solutions\n From custom software\n to cloud infrastructure.",
       size: "cover",
       bg:image1,
       textColor: "#ffffff",

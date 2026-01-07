@@ -1583,7 +1583,28 @@ button {
     display: block;
     margin: 0 auto;
   }
+ 
+ .compact-card .avatar-wrap {
+    top: 18px;                 /* 🔥 pulls image down correctly */
+    padding: 4px;
+  }
 
+  /* Remove extra reserved space */
+  .compact-card .card-body {
+    padding-top: 88px !important; /* 🔥 exact space = avatar overlap */
+  }
+
+  /* Name sits tight under image */
+  .compact-card .team-name {
+    margin-top: -60px !important;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .compact-card .team-role {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
 }
 
 
@@ -1591,7 +1612,6 @@ button {
   transform: scale(1.08);
   box-shadow: 0 14px 35px rgba(0,0,0,0.25);
 }
-
 
 /* Modal overlay */
 /* Modal overlay (refined) */
@@ -1734,7 +1754,8 @@ button {
 .compact-card .team-name {
   font-size: 17px;
   font-weight: 700;
-  margin: 4px 0;
+  margin: -2px 0;
+  /* margin-top: -5px; */
   color: #0f172a;
 }
 
@@ -1746,8 +1767,9 @@ button {
 }
 
 .compact-card .team-bio {
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 14px;
+  color: #1f355b;
+  font-weight: 500;
   line-height: 1.45;
   margin: 0 18px 12px; /* keep bio narrow and tidy */
 }
@@ -1819,7 +1841,7 @@ button {
   color: #1f2937;
 }
 .culture-text {
-  max-width: 920px;
+  max-width: 900px;
   margin: 0 auto;
   color: var(--muted);
   font-size: 14px;
@@ -1858,7 +1880,7 @@ button {
   color: #1f2937;
 }
 .culture-text {
-  max-width: 920px;
+  max-width: 600px;
   margin: 0 auto;
   color: var(--muted);
   font-size: 14px;
@@ -1888,7 +1910,7 @@ button {
 }
 
 .culture-text {
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
   font-size: 18px;
   line-height: 1.7;

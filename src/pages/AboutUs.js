@@ -35,7 +35,7 @@ export default function AboutUs() {
           </blockquote>
           <p>
             Two Elephants is built on core values that elephants naturally
-            represent — unmatched strength, deep loyalty, emotional
+            represent unmatched strength, deep loyalty, emotional
             intelligence, and a remarkable memory.
           </p>
 

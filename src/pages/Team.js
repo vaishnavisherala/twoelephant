@@ -45,9 +45,9 @@ export default function Team() {
     },
     {
       name: "Pankaj Rathi",
-      role: "Technical Lead",
+      role: "Lead",
       img: pankaj,
-      social:" https://www.linkedin.com/in/pankaj-rathi-474b6211/",
+      social:"https://www.linkedin.com/in/pankajsureshrathi/",
       bio: "He manages our Overseas Operations. He graduated from VJTI Mumbai as Gold Medalist in Textile Engineering & completed Masters degree in Textiles, NY. Currently based in Houstan Texas and leading a Global Shipping Business.",
     },
   ];
@@ -61,6 +61,7 @@ export default function Team() {
         </div>
       )}
 
+      
       {/* HERO */}
       <section
         className="team-hero-banner"
@@ -72,15 +73,34 @@ export default function Team() {
           position: "relative",
         }}
       >
+        
         <div style={{ position: "absolute", inset: 0}} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#fff" }}>
-          <h1 style={{ fontSize: 46, fontWeight: 700 }}>Leadership & Team</h1>
+          <h1 style={{ fontSize: 46, fontWeight: 500 }}>Leadership & Team</h1>
           <p style={{ color:"orange", fontSize: 22, fontWeight: 600, maxWidth: 800, margin: "0 auto" }}>
             Meet the people who drive innovation, guide our mission, and build the future.
           </p>
         </div>
       </section>
 
+ {/* CULTURE SECTION */}
+        <section style={{ marginTop: 50, textAlign: "center" }}>
+          <h2 style={{ fontSize: 26, fontWeight: 700 ,color: "#1f355b"}}>Our Culture</h2>
+          <p
+            style={{
+              maxWidth: 900,
+              margin: "12px auto",
+              lineHeight: 1.7,
+              color: "#1f355b",
+              fontSize: 19,
+              fontWeight: 500,
+            }}
+          >
+            At Two Elephants, we believe in strength through unity, care for our team
+            and clients, and honesty in everything we do. We foster a collaborative
+            environment where talent grows, ideas flourish, and innovation thrives.
+          </p>
+        </section>
       {/* CONTENT */}
       <section style={{ padding: "40px 30px" }}>
         <div
@@ -102,7 +122,6 @@ export default function Team() {
             />
           ))}
         </div>
-
         <div
           style={{
             display: "grid",
@@ -122,23 +141,7 @@ export default function Team() {
           ))}
         </div>
       </section>
-       {/* CULTURE SECTION */}
-        <section style={{ marginTop: 50, textAlign: "center" }}>
-          <h2 style={{ fontSize: 26, fontWeight: 700 }}>Our Culture</h2>
-          <p
-            style={{
-              maxWidth: 760,
-              margin: "12px auto",
-              lineHeight: 1.7,
-              color: "#555",
-              fontSize: 15,
-            }}
-          >
-            At Two Elephants, we believe in strength through unity, care for our team
-            and clients, and honesty in everything we do. We foster a collaborative
-            environment where talent grows, ideas flourish, and innovation thrives.
-          </p>
-        </section>
+      
 
       {/* FOOTER */}
       <Footer/>
