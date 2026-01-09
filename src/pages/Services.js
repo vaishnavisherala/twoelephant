@@ -15,7 +15,7 @@ import casetudy1 from "../images/casestudy.jpeg";
 import producteng from "../images/productengg.jpg";
 import cyber from "../images/cyber.jpg";
 import dataAI from "../images/dataAI.png";
-import ommimarket from "../images/ommimarket.png";
+import AIenable from "../images/AIenable.jpg";
 import ERP from "../images/ERP.jpg";
 import Footer from "./Footer";
 export default function Services() {
@@ -61,7 +61,7 @@ export default function Services() {
         "Ethical AI practices ensuring fairness, transparency, and data responsibility.",
     },
     {
-       image: ommimarket,
+       image: AIenable,
       title: "Cognitive & AI-Enabled Solutions",
       description:
         "Deployment of advanced algorithms for process automation",

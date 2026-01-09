@@ -9,7 +9,7 @@
 body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:var(--charcoal)}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:7px 28px;border-bottom:1px solid #eee;background:#fff}
 .brand{display:flex;align-items:center;gap:12px}
-.logo{width:48px;height:48px;object-fit:contain}
+.logo{width:80px;height:60px;object-fit:contain}
 .brand-text{font-weight:700;letter-spacing:1px}
 .nav-links a{margin-left:16px;text-decoration:none;color:var(--charcoal);}
 .hero{padding:30px 24px;text-align:center}
