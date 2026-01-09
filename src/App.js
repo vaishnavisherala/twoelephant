@@ -32,12 +32,10 @@ export default function App() {
           <Link to="/">Home</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/team">Team</Link>
-
            <div className="dropdown">
     <button className="dropdown-btn">
       Services ▾
     </button>
-
     <div className="dropdown-menu">
       <Link to="/services">Our Services</Link>
       <Link to="/industries">Industries We Serve</Link>
@@ -45,12 +43,10 @@ export default function App() {
   </div>
           {/* <Link to="/ERP">ERP</Link> */}
           <Link to="/case-studies">Case Studies</Link>
-
           <Link to="/careers">Career</Link>
           {/* <Link to="/login">Login</Link> */}
           {/* <Link to="/register">Register</Link> */}
           <Link className="nav-contact-btn" to="/contact">Contact Us</Link>
-
         </div>
 
         {/* Hamburger Button */}

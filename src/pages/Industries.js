@@ -1,14 +1,14 @@
 import React from "react";
 import heroImg from "../images/img1.jpg";
-import casestudy from "../images/casestudy.jpeg";
+import edu from "../images/e.jpg";
 import manufacturing from "../images/manufacturing.jpg";
-import retail from "../images/retail.jpg";
+import bfsi from "../images/bfsi.jpg";
 import healthcare from "../images/healthcare.jpg";
 import Footer from "./Footer";
 export default function Industries() {
   const industries = [
     {
-      image: casestudy,
+      image: edu,
       title: "Education",
       description:
         "Digital learning platforms, assessment systems, student management, and virtual classrooms.",
@@ -20,10 +20,10 @@ export default function Industries() {
         "AI-powered diagnosis, telemedicine solutions, EMR systems, and patient engagement platforms.",
     },
     {
-      image: retail,
-      title: "Retail",
+      image: bfsi,
+      title: "BFSI",
       description:
-        "Omnichannel commerce, POS systems, customer analytics, and inventory automation.",
+        "we are a leading institution within this critical domain, providing comprehensive banking, investment, and insurance solutions.",
     },
     
    
